@@ -12,7 +12,24 @@
     font-size: 30px
     font-weight: 500
     transition: 0.3s ease
+    display: block
+    width: max-content
+
+    margin: 30px 0
 
     &:hover
         outline-offset: 0
         background: $cRedDark
+
+.section-header
+    position: relative
+    padding-right: 15px
+    &::after
+        content: ''
+        position: absolute
+        width: 145px
+        height: 2px
+        background: $cRed
+        top: 50%
+        right: -145px
+        transform: translateY(-50%) 

@@ -16,6 +16,13 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+  color: #353535;
+  font-size: 25px;
+  font-weight: 400;
+  width: max-content;
+}
+
 *, html {
   margin: 0;
   padding: 0;
@@ -31,10 +38,28 @@ h1 {
   font-size: 30px;
   font-weight: 500;
   transition: 0.3s ease;
+  display: block;
+  width: max-content;
+  margin: 30px 0;
 }
 .btn:hover {
   outline-offset: 0;
   background: #d35c5c;
+}
+
+.section-header {
+  position: relative;
+  padding-right: 15px;
+}
+.section-header::after {
+  content: "";
+  position: absolute;
+  width: 145px;
+  height: 2px;
+  background: #D76D6D;
+  top: 50%;
+  right: -145px;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=main.css.map */
