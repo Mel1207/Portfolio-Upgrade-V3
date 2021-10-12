@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
+  background: red;
 }
 
 a {
@@ -35,9 +36,20 @@ h2 {
   margin: auto;
 }
 
+.navbar {
+  padding: 30px 0;
+}
 .navbar .nav-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.navbar .nav-flex ul {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-flex ul li {
+  margin-left: 35px;
 }
 
 .btn {
