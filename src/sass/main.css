@@ -237,12 +237,12 @@ button {
 .section-footer .container {
   z-index: 10 !important;
 }
-.section-footer .container.grid {
+.section-footer .grid {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
 }
-.section-footer .container.grid div {
+.section-footer .grid div {
   width: max-content;
   margin: auto;
 }
@@ -292,6 +292,14 @@ button {
 }
 .section-footer .footer-links li {
   margin-right: 35px;
+}
+.section-footer .footer-base {
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.9rem;
+  display: block;
+  text-align: center;
+  margin-top: 15vh;
 }
 
 /*# sourceMappingURL=main.css.map */
