@@ -9,13 +9,13 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="container nav-flex">
-                <a href="https://meljohnpualon.netlify.app/" target="_blank">
+                <a href="#!">
                     <img src={navLogo} alt="MjP Logo" />
                 </a>
 
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/mel-john-pualon-75345419a/" target="_blank">
+                        <a href="#!">
                             <img src={navLinkIn} alt="LinkedIn" />
                         </a>
                     </li>
