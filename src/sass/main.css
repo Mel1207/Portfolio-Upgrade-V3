@@ -19,9 +19,21 @@ h1 {
 
 h2 {
   color: #353535;
-  font-size: 25px;
   font-weight: 400;
   width: max-content;
+}
+
+h3 {
+  color: #353535;
+  font-weight: 600;
+}
+
+h5 {
+  color: #353535;
+}
+
+p {
+  color: #353535;
 }
 
 *, html {
@@ -89,6 +101,10 @@ h2 {
   transform: translateY(-50%);
 }
 
+.section-subheader {
+  font-size: 1.7rem;
+}
+
 .section-container {
   display: flex;
   align-items: center;
@@ -149,7 +165,7 @@ h2 {
 }
 
 .section-2 {
-  height: 70vh;
+  height: 650px;
   width: 100%;
   background: #fff;
   display: flex;
@@ -165,7 +181,7 @@ h2 {
   width: 160px;
   position: relative;
   border-radius: 50%;
-  margin: 0 auto 2.5em;
+  margin: 3.5em auto 2.5em;
 }
 .section-2 .grid .grid-container .container-logo img {
   position: absolute;

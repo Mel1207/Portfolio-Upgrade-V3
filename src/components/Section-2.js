@@ -8,6 +8,8 @@ const Section2 = () => {
         <div className="section-2">
             <div className="container">
                 <h2 className="section-header">My Services</h2>
+                <h3 className="section-subheader">Take a look at my experties</h3>
+
                 <div className="grid">
                     <div className="grid-container">
                         <div className="container-logo logo-1">
