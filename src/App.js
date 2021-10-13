@@ -1,20 +1,26 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import AboutPage from './components/Aboutpage/AboutPage';
+import BlogPage from './components/Blogpage/BlogPage';
 import Footer from './components/Footer';
-import Header from './components/Header';
+import HomePage from './components/Homepage/HomePage';
 import Navbar from './components/Navbar';
-import Section1 from './components/Section-1';
-import Section2 from './components/Section-2';
+import PortfolioPage from './components/Portfoliopage/PortfolioPage';
+import SingleBlogPage from './components/SingleBlogPage/SingleBlogPage';
 import './sass/main.css';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <Header />
-      <Section1 />
-      <Section2 />
+      <Switch>
+        <Route component={HomePage} path='/' exact />
+        <Route component={AboutPage} path='/about'/>
+        <Route component={SingleBlogPage} path='/blog/:slug'/>
+        <Route component={BlogPage} path='/blog'/>
+        <Route component={PortfolioPage} path='/portfolio'/>
+      </Switch>
       <Footer />
-    </div>
+    </BrowserRouter>
   )
 }
 

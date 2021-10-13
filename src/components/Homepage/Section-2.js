@@ -1,7 +1,7 @@
 import React from 'react'
-import logoFrontEnd from '../img/logo-frontend.svg'
-import logoUiux from '../img/logo-uiux.svg'
-import logoResponsive from '../img/logo-responsive.svg'
+import logoFrontEnd from '../../img/logo-frontend.svg'
+import logoUiux from '../../img/logo-uiux.svg'
+import logoResponsive from '../../img/logo-responsive.svg'
 
 const Section2 = () => {
     return (
