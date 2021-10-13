@@ -1,5 +1,9 @@
 import React from 'react'
 import footerBg from '../img/footer-bg.png'
+import navBehance from '../img/nav-logo-behance.svg'
+import navLinkIn from '../img/nav-logo-linkedIn.svg'
+import navGithub from '../img/nav-logo-github.svg'
+import navFacebook from '../img/nav-logo-facebook.svg'
 
 const Footer = () => {
     return (
@@ -10,10 +14,17 @@ const Footer = () => {
             backgroundAttachment: 'fixed'
         }}>
             <div className="overlay">
-                <div className="container">
+                <div className="container grid">
                     <div>
                         <h2 className="section-header">Lets get in touch</h2>
-                        <h3 className="footer-subheader">Need a website?</h3>
+                        <h3 className="footer-subheader">Need a website ?</h3>
+
+                        <ul className="footer-links">
+                            <li><a href="#!"><img src={navLinkIn} alt="" /></a></li>
+                            <li><a href="#!"><img src={navBehance} alt="" /></a></li>
+                            <li><a href="#!"><img src={navGithub} alt="" /></a></li>
+                            <li><a href="#!"><img src={navFacebook} alt="" /></a></li>
+                        </ul>
                     </div>
                     <div>
                         <form className="form-group form-container">

@@ -221,6 +221,7 @@ button {
 .section-footer {
   position: relative;
   height: 100vh;
+  min-height: 800px;
   width: 100%;
 }
 .section-footer .overlay {
@@ -236,15 +237,25 @@ button {
 .section-footer .container {
   z-index: 10 !important;
 }
+.section-footer .container.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.section-footer .container.grid div {
+  width: max-content;
+  margin: auto;
+}
 .section-footer .section-header {
   color: #fff;
 }
 .section-footer .footer-subheader {
   font-size: 1.7rem;
   color: #fff;
+  margin-bottom: 2em;
 }
 .section-footer .form-container {
-  padding: 2.5em 1.8em;
+  padding: 2.5em 1.9em;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(3px);
   width: 450px;
@@ -271,9 +282,16 @@ button {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
-.section-footer .btn {
+.section-footer .form-container .btn {
   display: block;
   width: 100%;
+}
+.section-footer .footer-links {
+  display: flex;
+  align-items: center;
+}
+.section-footer .footer-links li {
+  margin-right: 35px;
 }
 
 /*# sourceMappingURL=main.css.map */

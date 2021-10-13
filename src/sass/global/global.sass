@@ -181,6 +181,7 @@
 .section-footer 
     position: relative
     height: 100vh
+    min-height: 800px
     width: 100%
 
     .overlay
@@ -196,15 +197,25 @@
     .container
         z-index: 10 !important
 
+    .container.grid
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr 1fr
+
+        div 
+            width: max-content
+            margin: auto
+
     .section-header
         color: #fff
 
     .footer-subheader
         font-size: 1.7rem
         color: #fff
+        margin-bottom: 2em
 
     .form-container 
-        padding: 2.5em 1.8em
+        padding: 2.5em 1.9em
         background: rgba(255, 255, 255, 0.03)
         backdrop-filter: blur(3px)
         width: 450px
@@ -231,6 +242,13 @@
             color: $cWhite
             font-family: 'Montserrat', sans-serif
 
-    .btn 
-        display: block
-        width: 100%
+        .btn 
+            display: block
+            width: 100%
+
+    .footer-links
+        display: flex
+        align-items: center
+            
+        li 
+            margin-right: 35px
