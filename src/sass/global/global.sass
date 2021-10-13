@@ -203,5 +203,34 @@
         font-size: 1.7rem
         color: #fff
 
+    .form-container 
+        padding: 2.5em 1.8em
+        background: rgba(255, 255, 255, 0.03)
+        backdrop-filter: blur(3px)
+        width: 450px
+        height: auto
+
+        input[type=text], textarea
+            font-size: 1.1rem
+            color: $cWhite
+
+        input, textarea 
+            display: block
+            width: 100%
+            background: none
+            outline: none
+            border: none
+            border-bottom: 2px solid $cWhite
+            padding: 15px 0
+            margin-bottom: 10px
+            resize: none
+
+        input::placeholder, textarea::placeholder
+            height: 40px
+            font-size: 1.1rem
+            color: $cWhite
+            font-family: 'Montserrat', sans-serif
+
     .btn 
         display: block
+        width: 100%

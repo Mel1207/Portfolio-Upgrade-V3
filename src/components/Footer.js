@@ -16,13 +16,11 @@ const Footer = () => {
                         <h3 className="footer-subheader">Need a website?</h3>
                     </div>
                     <div>
-                        <form className="form-group">
+                        <form className="form-group form-container">
                             <input type="text" placeholder="Your name" />
                             <input type="text" placeholder="Your email" />
                             <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                            {/* <input type="submit"  className="btn" value="Send"/> */}
                             <button className="btn" type="submit">Send</button>
-                            {/* <a className="btn">Send</a> */}
                         </form>
                     </div>
                 </div>
