@@ -1,4 +1,5 @@
 import React from 'react'
+import headerBg from '../img/header-bg.jpg'
 
 const Header = () => {
     return (
@@ -9,6 +10,12 @@ const Header = () => {
                 <h1>UI/UX DESIGNER</h1>
                 <a href="#!" className="btn">See Works</a>
             </div>
+            <div className="bg-img" style={{
+                background: `url("${headerBg}")`,
+                backgroundSize: "cover",
+                // backgroundAttachment: "fixed",
+                backgroundPosition: "center"
+            }}></div>
         </div>
     )
 }

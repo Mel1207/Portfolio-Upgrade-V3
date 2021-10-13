@@ -37,7 +37,6 @@ h2 {
 
 .navbar {
   height: 100px;
-  background: red;
   display: flex;
   align-items: center;
 }
@@ -99,6 +98,17 @@ h2 {
   line-height: 80px;
   font-weight: 600;
   font-size: 3rem;
+}
+
+.bg-img {
+  position: absolute;
+  height: 100%;
+  width: 40vw;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
