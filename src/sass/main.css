@@ -149,7 +149,7 @@ h2 {
 }
 
 .section-2 {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   background: #fff;
   display: flex;
@@ -163,7 +163,6 @@ h2 {
 .section-2 .grid .grid-container .container-logo {
   height: 160px;
   width: 160px;
-  background: red;
   position: relative;
   border-radius: 50%;
   margin: 0 auto 2.5em;
@@ -173,8 +172,17 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
+}
+.section-2 .grid .grid-container .logo-1 {
+  background: rgba(215, 109, 109, 0.2);
+}
+.section-2 .grid .grid-container .logo-2 {
+  background: rgba(109, 215, 132, 0.2);
+}
+.section-2 .grid .grid-container .logo-3 {
+  background: rgba(109, 151, 215, 0.2);
 }
 .section-2 .grid .grid-container h5 {
   text-align: center;
