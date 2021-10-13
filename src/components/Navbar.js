@@ -15,7 +15,7 @@ const Navbar = () => {
 
                 <ul>
                     <li>
-                        <a href="#!">
+                        <a href="https://www.linkedin.com/in/mel-john-pualon-75345419a/" target="_blank">
                             <img src={navLinkIn} alt="LinkedIn" />
                         </a>
                     </li>
