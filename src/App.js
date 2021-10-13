@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Section1 from './components/Section-1';
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Section1 />
       <Section2 />
+      <Footer />
     </div>
   )
 }
