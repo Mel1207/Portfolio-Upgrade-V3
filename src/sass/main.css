@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
-  background: red;
 }
 
 a {
@@ -37,7 +36,10 @@ h2 {
 }
 
 .navbar {
-  padding: 30px 0;
+  height: 100px;
+  background: red;
+  display: flex;
+  align-items: center;
 }
 .navbar .nav-flex {
   display: flex;
@@ -58,7 +60,7 @@ h2 {
   color: #fff;
   outline: 2px solid #fff;
   outline-offset: -8px;
-  font-size: 30px;
+  font-size: 1.6rem;
   font-weight: 500;
   transition: 0.3s ease;
   display: block;
@@ -73,6 +75,8 @@ h2 {
 .section-header {
   position: relative;
   padding-right: 15px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 .section-header::after {
   content: "";
@@ -83,6 +87,18 @@ h2 {
   top: 50%;
   right: -145px;
   transform: translateY(-50%);
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  height: calc( 100vh - 100px );
+  width: 100%;
+}
+.section-container h1 {
+  line-height: 80px;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */

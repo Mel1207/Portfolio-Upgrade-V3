@@ -34,8 +34,6 @@ const Navbar = () => {
                             <img src={navFacebook} alt="Facebook" />
                         </a>
                     </li>
-                   
-                    
                 </ul>
             </div>
         </nav>
