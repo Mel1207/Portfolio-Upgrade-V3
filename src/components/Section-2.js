@@ -13,13 +13,13 @@ const Section2 = () => {
                     </div>
                     <div>
                         <img src="" alt="" />
-                        <h5>FRONT-END DEVELOPMENT</h5>
-                        <p>I can build a dynamic website designs, creates an interaction and user experience. I can convert the design concept into a usable component.</p>
+                        <h5>UI/UX DESIGN</h5>
+                        <p>I design a UI-UX to the extent of a project and can create a prototype that demonstrate the project features and user experience.</p>
                     </div>
                     <div>
                         <img src="" alt="" />
-                        <h5>FRONT-END DEVELOPMENT</h5>
-                        <p>I can build a dynamic website designs, creates an interaction and user experience. I can convert the design concept into a usable component.</p>
+                        <h5>RESPONSIVE DESIGN</h5>
+                        <p>I make every project responsive and mobile friendly to the users. Making layouts will automatically adjust and adapt to any device screen size.</p>
                     </div>
                 </div>
             </div>
