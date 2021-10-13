@@ -152,6 +152,23 @@ h2 {
   height: 80vh;
   width: 100%;
   background: #fff;
+  display: flex;
+  align-items: center;
+}
+.section-2 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+.section-2 .grid h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.section-2 .grid p {
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
