@@ -9,8 +9,13 @@ const Footer = () => {
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
         }}>
-            <div className="container">
-
+            <div className="overlay">
+                <div className="container">
+                    <div>
+                        <h2 className="section-header">My Services</h2>
+                        <h3 className="footer-subheader">Take a look at my experties</h3>
+                    </div>
+                </div>
             </div>
         </div>
     )
