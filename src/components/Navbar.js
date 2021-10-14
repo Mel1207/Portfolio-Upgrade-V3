@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import navLogo from '../img/nav-logo-main.svg'
 import navBehance from '../img/nav-logo-behance.svg'
 import navLinkIn from '../img/nav-logo-linkedIn.svg'
@@ -7,6 +7,12 @@ import navGithub from '../img/nav-logo-github.svg'
 import navFacebook from '../img/nav-logo-facebook.svg'
 
 const Navbar = () => {
+    const homeUrl = "http://localhost:3000/"
+    const currentUrl = window.location.href
+    console.log(currentUrl)
+    // const 
+
+
     return (
         <nav className="navbar">
             <div className="container nav-flex">
@@ -14,7 +20,10 @@ const Navbar = () => {
                     <img src={navLogo} alt="MjP Logo" />
                 </NavLink>
 
-                <ul>
+                <ul className={currentUrl === homeUrl ? 'standard' : 'changeStyledNav'}>
+                    <li>
+                        <Link to="/about">about</Link>
+                    </li>
                     <li>
                         <a href="https://www.linkedin.com/in/mel-john-pualon-75345419a" target="_blank" rel="noreferrer">
                             <img src={navLinkIn} alt="LinkedIn" />
