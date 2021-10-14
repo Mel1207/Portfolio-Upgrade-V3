@@ -20,7 +20,7 @@ const Navbar = () => {
                     <img src={navLogo} alt="MjP Logo" />
                 </NavLink>
 
-                <ul className={currentUrl === homeUrl ? 'standard' : 'changeStyledNav'}>
+                <ul className={currentUrl === homeUrl? 'standard' : 'changeStyledNav'}>
                     <li>
                         <Link to="/about">about</Link>
                     </li>

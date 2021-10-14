@@ -1,11 +1,17 @@
 import React from 'react'
+import Navbar from '../Navbar'
 
 const AbougPage = () => {
-
+    
+    
     return (
-        <div className="container">
-            <h1>THIS IS ABOUT PAGE</h1>
-        </div>
+        <>
+            <Navbar />
+            <div className="container">
+                <h1>THIS IS ABOUT PAGE</h1>
+            </div>
+            
+        </>
     )
 }
 

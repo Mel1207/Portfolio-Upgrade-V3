@@ -11,7 +11,7 @@ import './sass/main.css';
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
         <Route component={HomePage} path='/' exact />
         <Route component={AboutPage} path='/about'/>
