@@ -7,10 +7,12 @@ import navGithub from '../img/nav-logo-github.svg'
 import navFacebook from '../img/nav-logo-facebook.svg'
 
 const Navbar = () => {
-    const homeUrl = "http://localhost:3000/"
-    const currentUrl = window.location.href
-    console.log(currentUrl)
-    // const 
+    // const homeUrl = "http://localhost:3000/"
+    // const currentUrl = window.location.href
+    const homePath = "/"
+    const currentPath = window.location.pathname
+    // console.log(currentUrl)
+    console.log(currentPath)
 
 
     return (
@@ -20,7 +22,7 @@ const Navbar = () => {
                     <img src={navLogo} alt="MjP Logo" />
                 </NavLink>
 
-                <ul className={currentUrl === homeUrl? 'standard' : 'changeStyledNav'}>
+                <ul className={currentPath !== homePath ? 'changeStyledNav' : 'standard'}>
                     <li>
                         <Link to="/about">about</Link>
                     </li>
