@@ -78,24 +78,36 @@
         font-weight: 600
         font-size: 3rem
 
-    .scroll-trigger 
-        height: 40px
-        width: 15px
-        border-radius: 50px
-        border: 1px solid $cBlack
-        position: relative
-
-        &::after
-            content: ""
-            position: absolute
-            left: 50%
-            top: 3px
-            transform: translateX(-50%)
-            height: 12px
-            width: 2px
+    .scroll-btn
+        margin-top: 20vh
+        .scroll-trigger 
+            height: 40px
+            width: 15px
             border-radius: 50px
-            background: $cBlack
+            border: 1px solid $cBlack
+            position: relative
+            margin: auto
 
+            &::after
+                content: ""
+                position: absolute
+                left: 50%
+                top: 3px
+                transform: translateX(-50%)
+                height: 12px
+                width: 2px
+                border-radius: 50px
+                background: $cBlack
+                transition: all 0.5s ease
+
+        p 
+            width: max-content
+            margin: .8em auto 0
+
+    .scroll-trigger
+        &:hover
+            &::after
+                transform: translate(-50%, 19px)
 .bg-img
     position: absolute
     height: 100%

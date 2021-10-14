@@ -125,14 +125,18 @@ button {
   font-weight: 600;
   font-size: 3rem;
 }
-.section-container .scroll-trigger {
+.section-container .scroll-btn {
+  margin-top: 20vh;
+}
+.section-container .scroll-btn .scroll-trigger {
   height: 40px;
   width: 15px;
   border-radius: 50px;
   border: 1px solid #353535;
   position: relative;
+  margin: auto;
 }
-.section-container .scroll-trigger::after {
+.section-container .scroll-btn .scroll-trigger::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -142,6 +146,14 @@ button {
   width: 2px;
   border-radius: 50px;
   background: #353535;
+  transition: all 0.5s ease;
+}
+.section-container .scroll-btn p {
+  width: max-content;
+  margin: 0.8em auto 0;
+}
+.section-container .scroll-trigger:hover::after {
+  transform: translate(-50%, 19px);
 }
 
 .bg-img {

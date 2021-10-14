@@ -10,7 +10,7 @@ const Header = () => {
                 <h1>UI/UX DESIGNER</h1>
                 <a href="#!" className="btn">See Works</a>
 
-                <div>
+                <div className="scroll-btn">
                     <a href="#section-1">
                         <div className="scroll-trigger"></div>
                         <p>SCROLL DOWN</p>
