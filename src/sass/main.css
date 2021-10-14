@@ -82,6 +82,7 @@ button {
   transition: 0.3s ease;
   display: block;
   width: max-content;
+  cursor: pointer;
   margin: 30px 0;
 }
 .btn:hover {
@@ -225,6 +226,7 @@ button {
   width: 100%;
 }
 .section-footer .overlay {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -255,14 +257,14 @@ button {
   margin-bottom: 2em;
 }
 .section-footer .form-container {
-  padding: 2.5em 1.9em;
+  padding: 2.5rem 1.9rem;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(3px);
   width: 450px;
   height: auto;
 }
 .section-footer .form-container input[type=text], .section-footer .form-container textarea {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #fff;
 }
 .section-footer .form-container input, .section-footer .form-container textarea {
@@ -272,13 +274,13 @@ button {
   outline: none;
   border: none;
   border-bottom: 2px solid #fff;
-  padding: 15px 0;
+  padding: 1rem 0;
   margin-bottom: 10px;
   resize: none;
 }
 .section-footer .form-container input::placeholder, .section-footer .form-container textarea::placeholder {
   height: 40px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
