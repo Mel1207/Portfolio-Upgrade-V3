@@ -100,11 +100,11 @@ button {
 .section-header::after {
   content: "";
   position: absolute;
-  width: 145px;
+  width: 120px;
   height: 2px;
   background: #D76D6D;
   top: 50%;
-  right: -145px;
+  right: -120px;
   transform: translateY(-50%);
 }
 
