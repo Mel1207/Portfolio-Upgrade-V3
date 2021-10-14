@@ -78,6 +78,51 @@
         font-weight: 600
         font-size: 3rem
 
+    .header-flex 
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    .sidenav-menu
+        display: flex
+        width: 13px
+        align-items: center
+        justify-content: space-between
+        transition: all 0.5s ease
+        cursor: pointer
+
+        .line-1
+            height: 2.5rem
+            width: 2px
+            background: #fff
+            transition: all 0.5s ease
+
+        
+        .line-2
+            height: 3rem
+            width: 2px
+            background: #fff
+            transition: all 0.5s ease
+
+        .line-menu
+            opacity: 0
+            display: none
+            color: $cWhite
+            transition: all 1s ease
+
+        &:hover
+            width: 120px
+            .line-1
+                height: 0
+                // opacity: 0
+
+            .line-2
+                transform: rotate(90deg)
+
+            .line-menu 
+                display: block
+                opacity: 1
+
     .scroll-btn
         margin-top: 20vh
         .scroll-trigger 
@@ -298,7 +343,3 @@
 
         span 
             padding: 0 10px 
-
-
-.changeStyledNav
-    background: red

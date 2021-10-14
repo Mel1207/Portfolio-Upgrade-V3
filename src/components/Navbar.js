@@ -11,8 +11,6 @@ import navBlackGithub from '../img/nav-logoBlack-github.svg'
 import navBlackFacebook from '../img/nav-logoBlack-facebook.svg'
 
 const Navbar = (props) => {
-    // console.log(props)
-
     return (
         <nav className="navbar">
             <div className="container nav-flex">
@@ -20,11 +18,8 @@ const Navbar = (props) => {
                     <img src={navLogo} alt="MjP Logo" />
                 </NavLink>
 
-                {/* className={!props.isExact ? 'changeStyledNav' : ''} */}
                 <ul>
-                    <li>
-                        <Link to="/about">about</Link>
-                    </li>
+                    
                     <li>
                         <a href="https://www.linkedin.com/in/mel-john-pualon-75345419a" target="_blank" rel="noreferrer">
                             <img src={!props.isExact ? navBlackLinkIn : navLinkIn } alt="LinkedIn" />

@@ -125,6 +125,50 @@ button {
   font-weight: 600;
   font-size: 3rem;
 }
+.section-container .header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-container .sidenav-menu {
+  display: flex;
+  width: 13px;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.section-container .sidenav-menu .line-1 {
+  height: 2.5rem;
+  width: 2px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+.section-container .sidenav-menu .line-2 {
+  height: 3rem;
+  width: 2px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+.section-container .sidenav-menu .line-menu {
+  opacity: 0;
+  display: none;
+  color: #fff;
+  transition: all 1s ease;
+}
+.section-container .sidenav-menu:hover {
+  width: 120px;
+}
+.section-container .sidenav-menu:hover .line-1 {
+  height: 0;
+}
+.section-container .sidenav-menu:hover .line-2 {
+  transform: rotate(90deg);
+}
+.section-container .sidenav-menu:hover .line-menu {
+  display: block;
+  opacity: 1;
+}
 .section-container .scroll-btn {
   margin-top: 20vh;
 }
@@ -339,10 +383,6 @@ button {
 }
 .section-footer .footer-base span {
   padding: 0 10px;
-}
-
-.changeStyledNav {
-  background: red;
 }
 
 /*# sourceMappingURL=main.css.map */
