@@ -252,7 +252,7 @@ button {
   color: #fff;
 }
 .section-footer .footer-subheader {
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: #fff;
   margin-bottom: 2em;
 }
@@ -302,6 +302,9 @@ button {
   display: block;
   text-align: center;
   margin-top: 15vh;
+}
+.section-footer .footer-base span {
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

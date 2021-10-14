@@ -36,7 +36,7 @@ const Footer = () => {
                             </form>
                         </div>
                     </div>
-                    <span className="footer-base">Copyright © 2021 | Mel John Pualon</span>
+                    <span className="footer-base">Copyright © 2021 <span>|</span> Mel John Pualon</span>
                 </div>
                 
             </div>
