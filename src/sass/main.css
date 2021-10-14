@@ -151,6 +151,8 @@ button {
 .section-container .scroll-btn p {
   width: max-content;
   margin: 0.8em auto 0;
+  color: #353535;
+  font-weight: 500;
 }
 .section-container .scroll-trigger:hover::after {
   transform: translate(-50%, 19px);
