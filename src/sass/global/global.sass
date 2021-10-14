@@ -2,6 +2,7 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    scroll-behavior: smooth
 
 .container 
     width: 80%
@@ -64,7 +65,7 @@
 
 .section-subheader
     font-size: 1.7rem
-    color: #353535
+    color: $cBlack
 
 .section-container 
     display: flex
@@ -76,6 +77,24 @@
         line-height: 80px
         font-weight: 600
         font-size: 3rem
+
+    .scroll-trigger 
+        height: 40px
+        width: 15px
+        border-radius: 50px
+        border: 1px solid $cBlack
+        position: relative
+
+        &::after
+            content: ""
+            position: absolute
+            left: 50%
+            top: 3px
+            transform: translateX(-50%)
+            height: 12px
+            width: 2px
+            border-radius: 50px
+            background: $cBlack
 
 .bg-img
     position: absolute
@@ -182,6 +201,7 @@
     height: 100vh
     min-height: 800px
     width: 100%
+    padding: 5vh 0
 
     .overlay
         display: flex
@@ -259,7 +279,7 @@
         font-size: .9rem
         display: block
         text-align: center
-        margin-top: 15vh
+        margin-top: 12vh
 
         span 
             padding: 0 10px 

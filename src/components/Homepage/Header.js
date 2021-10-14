@@ -9,11 +9,18 @@ const Header = () => {
                 <h1>FRONT_END DEVELOPER</h1>
                 <h1>UI/UX DESIGNER</h1>
                 <a href="#!" className="btn">See Works</a>
+
+                <div>
+                    <a href="#section-1">
+                        <div className="scroll-trigger"></div>
+                        <p>SCROLL DOWN</p>
+                    </a>
+                </div>
             </div>
             <div className="bg-img" style={{
                 background: `url("${headerBg}")`,
                 backgroundSize: "cover",
-                // backgroundAttachment: "fixed",
+                backgroundAttachment: "fixed",
                 backgroundPosition: "center"
             }}></div>
         </div>

@@ -4,7 +4,7 @@ import Object2 from '../../img/MC-app-mobile.png'
 
 const Section1 = () => {
     return (
-        <div className="section-1">
+        <div className="section-1" id="section-1">
             <div className="container flex">
                 <div className="left-aside">
                     <div>
