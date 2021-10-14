@@ -6,14 +6,8 @@ import navLinkIn from '../img/nav-logo-linkedIn.svg'
 import navGithub from '../img/nav-logo-github.svg'
 import navFacebook from '../img/nav-logo-facebook.svg'
 
-const Navbar = () => {
-    // const homeUrl = "http://localhost:3000/"
-    // const currentUrl = window.location.href
-    const homePath = "/"
-    const currentPath = window.location.pathname
-    // console.log(currentUrl)
-    console.log(currentPath)
-
+const Navbar = (props) => {
+    // console.log(props)
 
     return (
         <nav className="navbar">
@@ -22,7 +16,7 @@ const Navbar = () => {
                     <img src={navLogo} alt="MjP Logo" />
                 </NavLink>
 
-                <ul className={currentPath !== homePath ? 'changeStyledNav' : 'standard'}>
+                <ul className={!props.isExact ? 'changeStyledNav' : ''}>
                     <li>
                         <Link to="/about">about</Link>
                     </li>

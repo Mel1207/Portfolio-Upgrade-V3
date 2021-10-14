@@ -3,7 +3,6 @@ import AboutPage from './components/Aboutpage/AboutPage';
 import BlogPage from './components/Blogpage/BlogPage';
 import Footer from './components/Footer';
 import HomePage from './components/Homepage/HomePage';
-import Navbar from './components/Navbar';
 import PortfolioPage from './components/Portfoliopage/PortfolioPage';
 import SingleBlogPage from './components/SingleBlogPage/SingleBlogPage';
 import './sass/main.css';
@@ -11,7 +10,6 @@ import './sass/main.css';
 function App() {
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
       <Switch>
         <Route component={HomePage} path='/' exact />
         <Route component={AboutPage} path='/about'/>

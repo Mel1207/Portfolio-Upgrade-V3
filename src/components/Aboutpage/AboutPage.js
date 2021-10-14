@@ -6,7 +6,7 @@ const AbougPage = () => {
     
     return (
         <>
-            <Navbar />
+            <Navbar isExact={false}/>
             <div className="container">
                 <h1>THIS IS ABOUT PAGE</h1>
             </div>

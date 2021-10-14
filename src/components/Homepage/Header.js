@@ -1,12 +1,9 @@
 import React from 'react'
 import headerBg from '../../img/header-bg.jpg'
-import Navbar from '../Navbar'
 
 const Header = () => {
     return (
-        
         <>
-            <Navbar />
             <div className="section-container">
                 <div className="container">
                     <h2 className="section-header">Hi There I'm MJ</h2>
