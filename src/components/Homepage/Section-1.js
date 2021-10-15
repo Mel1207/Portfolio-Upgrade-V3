@@ -1,6 +1,7 @@
 import React from 'react'
 import Object1 from '../../img/elevedge.png'
 import Object2 from '../../img/MC-app-mobile.png'
+// comment
 
 const Section1 = () => {
     return (

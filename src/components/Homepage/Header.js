@@ -19,8 +19,6 @@ const Header = () => {
                             <div className="line-menu">MENU</div>
                         </div>
                     </div>
-
-
                     <div className="scroll-btn">
                         <a href="#section-1">
                             <div className="scroll-trigger"></div>
@@ -32,7 +30,6 @@ const Header = () => {
                     background: `url("${headerBg}")`,
                     backgroundSize: "cover",
                     backgroundAttachment: "fixed",
-                    backgroundPosition: "center"
                 }}></div>
             </div>
         </>

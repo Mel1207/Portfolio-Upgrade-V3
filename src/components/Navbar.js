@@ -17,9 +17,7 @@ const Navbar = (props) => {
                 <NavLink to="/" exact>
                     <img src={navLogo} alt="MjP Logo" />
                 </NavLink>
-
                 <ul>
-                    
                     <li>
                         <a href="https://www.linkedin.com/in/mel-john-pualon-75345419a" target="_blank" rel="noreferrer">
                             <img src={!props.isExact ? navBlackLinkIn : navLinkIn } alt="LinkedIn" />
