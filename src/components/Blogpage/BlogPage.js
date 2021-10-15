@@ -1,10 +1,16 @@
 import React from 'react'
+import Navbar from '../Navbar'
 
 const BlogPage = () => {
     return (
-        <div className="container">
-            <h1>THIS IS BLOG PAGE</h1>
-        </div>
+        <>  
+            <Navbar />
+            <div className="container">
+                <h1>THIS IS BLOG PAGE</h1>
+            </div>
+            
+        </>
+       
     )
 }
 

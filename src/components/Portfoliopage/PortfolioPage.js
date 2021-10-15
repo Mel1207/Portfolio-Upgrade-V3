@@ -1,10 +1,14 @@
 import React from 'react'
+import Navbar from '../Navbar'
 
 const PortfolioPage = () => {
     return (
-        <div className="container">
-            <h1>THIS IS PORTFOLIO PAGE</h1>
-        </div>
+        <>
+            <Navbar />
+            <div className="container">
+                <h1>THIS IS PORTFOLIO PAGE</h1>
+            </div>
+        </>
     )
 }
 

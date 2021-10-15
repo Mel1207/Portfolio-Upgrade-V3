@@ -1,10 +1,14 @@
 import React from 'react'
+import Navbar from '../Navbar'
 
 const SingleBlogPage = () => {
     return (
-        <div className="container">
-            <h1>THIS IS SINGLE BLOG PAGE</h1>
-        </div>
+        <>
+            <Navbar />
+            <div className="container">
+                <h1>THIS IS SINGLE BLOG PAGE</h1>
+            </div>
+        </>
     )
 }
 
