@@ -61,8 +61,8 @@ button {
   height: 100%;
   width: 100%;
   border: 2px solid red;
-  bottom: -30px;
-  right: -30px;
+  bottom: -6%;
+  right: -5%;
 }
 .about-grid .about-avatar-img {
   position: relative;
@@ -70,6 +70,17 @@ button {
   width: 100%;
 }
 
+@media screen and (max-width: 1080px) {
+  .about-grid {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 570px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    margin-top: -170px;
+  }
+}
 *, html {
   margin: 0;
   padding: 0;

@@ -22,6 +22,8 @@ const AboutPage = () => {
                     
 
                     <div>
+                        <h2 className="section-header">Hi There I'm MJ</h2>
+                        <h3 className="section-subheader">Coder and Designer</h3>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam necessitatibus temporibus explicabo quidem atque maxime quam mollitia assumenda maiores sint!
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eum ea suscipit! Quis consequatur rerum vero, tempora voluptate minus sed.
                     </div>
