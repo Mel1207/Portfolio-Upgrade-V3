@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import navLogo from '../img/nav-logo-main.svg'
 import navBehance from '../img/nav-logo-behance.svg'
 import navLinkIn from '../img/nav-logo-linkedIn.svg'
