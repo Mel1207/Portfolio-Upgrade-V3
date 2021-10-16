@@ -159,37 +159,6 @@ button {
   width: 24px;
 }
 
-@media screen and (max-width: 1080px) {
-  .about-grid {
-    margin-top: 0;
-  }
-
-  .skills-section .skills-card-grid {
-    grid-column-gap: 1rem;
-  }
-}
-@media screen and (max-width: 900px) {
-  .skills-section .skills-card-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .skills-section .skills-card-grid .skills-card {
-    margin-bottom: 2rem;
-  }
-}
-@media screen and (max-width: 570px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    margin-top: -170px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .skills-section .skills-card-grid {
-    grid-template-columns: 1fr;
-  }
-  .skills-section .skills-card-grid .skills-card {
-    margin-bottom: 2rem;
-  }
-}
 *, html {
   margin: 0;
   padding: 0;
@@ -258,9 +227,10 @@ button {
   transform: translateY(-50%);
 }
 
-.section-subheader {
+.section-subheader, .footer-subheader {
   font-size: 1.7rem;
   color: #353535;
+  margin-bottom: 2rem;
 }
 
 .section-container {
@@ -475,13 +445,8 @@ button {
   width: max-content;
   margin: auto;
 }
-.section-footer .section-header {
+.section-footer .section-header, .section-footer .footer-subheader {
   color: #fff;
-}
-.section-footer .footer-subheader {
-  font-size: 2rem;
-  color: #fff;
-  margin-bottom: 2em;
 }
 .section-footer .form-container {
   padding: 2.5rem 1.9rem;
@@ -532,6 +497,60 @@ button {
 }
 .section-footer .footer-base span {
   padding: 0 10px;
+}
+
+@media screen and (max-width: 1080px) {
+  .about-grid {
+    margin-top: 0;
+  }
+
+  .skills-section .skills-card-grid {
+    grid-column-gap: 1rem;
+  }
+
+  .section-footer .form-container {
+    width: 350px;
+  }
+
+  .section-header {
+    font-size: 1.1rem;
+  }
+
+  .section-subheader, .footer-subheader {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .skills-section .skills-card-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-section .skills-card-grid .skills-card {
+    margin-bottom: 2rem;
+  }
+
+  .section-footer .grid {
+    grid-template-columns: 1fr;
+  }
+  .section-footer .grid div:nth-child(1) {
+    margin-bottom: 2rem;
+  }
+  .section-footer .footer-base {
+    margin-top: 5vh;
+  }
+}
+@media screen and (max-width: 570px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    margin-top: -170px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .skills-section .skills-card-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-section .skills-card-grid .skills-card {
+    margin-bottom: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
