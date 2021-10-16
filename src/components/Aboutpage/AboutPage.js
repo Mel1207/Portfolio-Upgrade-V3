@@ -16,7 +16,11 @@ const AboutPage = () => {
             }}></div>
             <div className="container">
                 <div className="about-grid">
-                    <img src={aboutAvatar} alt="Mel John"  className="about-avatar-img"/>
+                    <div className="about-avatar">
+                        <img src={aboutAvatar} alt="Mel John"  className="about-avatar-img"/>
+                    </div>
+                    
+
                     <div>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam necessitatibus temporibus explicabo quidem atque maxime quam mollitia assumenda maiores sint!
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eum ea suscipit! Quis consequatur rerum vero, tempora voluptate minus sed.
