@@ -35,7 +35,15 @@ const AboutPage = () => {
                     <img src={galleryImg} alt="gallery" />
                 </div>
             </div>
-            
+            <div className="skills-section">
+                <div className="container">
+                    <div className="skills-card-grid">
+                        <div className="skills-card">1</div>
+                        <div className="skills-card">2</div>
+                        <div className="skills-card">3</div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
