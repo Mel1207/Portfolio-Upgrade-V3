@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar'
 import aboutBg from '../../img/aboutBg.png'
 import aboutAvatar from '../../img/avatar.jpg'
+import galleryImg from '../../img/gallery-img.jpg'
 
 const AboutPage = () => {
     
@@ -10,6 +11,8 @@ const AboutPage = () => {
             <Navbar />
             <div className="about-bg" style={{
                 background: `url("${aboutBg}")`,
+                backgroundAttachment: 'fixed',
+                backgroundRepeat: 'no-repeat',
                 height: '60vh',
                 width: '100%',
                 display: 'block'
@@ -20,13 +23,16 @@ const AboutPage = () => {
                         <img src={aboutAvatar} alt="Mel John"  className="about-avatar-img"/>
                     </div>
                     
-
                     <div>
-                        <h2 className="section-header">Hi There I'm MJ</h2>
+                        <h2 className="section-header">About Me</h2>
                         <h3 className="section-subheader">Coder and Designer</h3>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam necessitatibus temporibus explicabo quidem atque maxime quam mollitia assumenda maiores sint!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eum ea suscipit! Quis consequatur rerum vero, tempora voluptate minus sed.
+                        <p>I am a graduate of Bachelors Degree in Computer Science at The University of Manila. And continued my passion by taking free bootcamp courses from American TESOL and E-Global International Communications Inc.</p><br />
+                        <p>Coding and designing are the things I enjoy most, I like creating something new and discover things that will expand my capacity to learn, thats why i do spend my time in researching, practicing and developing. </p>
                     </div>
+                </div>
+                <div className="about-gallery">
+                    <div></div>
+                    <img src={galleryImg} alt="gallery" />
                 </div>
             </div>
             
