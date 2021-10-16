@@ -200,8 +200,10 @@ button {
   left: 0;
   bottom: 0;
   right: 0;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   background: #353535;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .menu-show {
@@ -210,7 +212,7 @@ button {
 }
 @keyframes menuShow {
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 

@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import headerBg from '../../img/header-bg.jpg'
+import { Link } from 'react-router-dom'
+import menuBg from '../../img/gallery-img.jpg'
 
 const Header = () => {
     const [ className, setClassName ] = useState()
@@ -41,7 +43,31 @@ const Header = () => {
                     backgroundAttachment: "fixed",
                 }}></div>
 
-                <div className={`menu ${className}`}></div>
+                <div className={`menu ${className}`}>
+                    <div>
+                        <ul>
+                            <li>
+                                <Link to="/"><h1 style={{color: '#fff'}}>HOME</h1></Link>
+                            </li>
+                            <li>
+                                <Link to="/about"><h1 style={{color: '#fff'}}>ABOUT</h1></Link>
+                            </li>
+                            <li>
+                                <Link to="/blog"><h1 style={{color: '#fff'}}>BLOGS</h1></Link>
+                            </li>
+                            <li>
+                                <Link to="/portfolio"><h1 style={{color: '#fff'}}>PORTFOLIO</h1></Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style={{
+                        background: `url("${menuBg}")`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover'
+                        }}>
+                    </div>
+                    
+                </div>
             </div>
         </>
     )
