@@ -47,15 +47,71 @@
 
 
 .skills-section
+    padding: 2.5rem 0
+    .section-subheader 
+        margin-bottom: 2.5rem
+
     .skills-card-grid
         display: grid
         grid-template-columns: 1fr 1fr 1fr
-        grid-column-gap: 3rem
+        grid-column-gap: 5rem
+        transition: all 0.5s ease
 
         .skills-card
-            height: 500px
+            height: 400px
             width: 100%
             background: #fbfbfb
             box-shadow: 8px 7px 20px rgba(0, 0, 0, 0.1)
+            transition: all 0.5s ease
+
+            .skills-img-container
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    height: 100%
+                    width: 100%
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, #000000 100%)
+
+                h4
+                    position: absolute
+                    bottom: 1.5rem
+                    z-index: 2
+                    color: $cWhite
+
+            .skills-card-content
+                padding: 1.5rem
+
+                ul 
+                    padding-left: 1.5rem
+            
+                    li 
+                        position: relative
+                        color: $cBlack
+                        margin-bottom: .5rem
+                        font-size: 1.2rem
+
+                        &::before
+                            content: ""
+                            position: absolute
+                            height: .5rem
+                            width: .5rem
+                            background: $cBlack
+                            left: -1.5rem
+                            top: 50%
+                            border-radius: 200px
+                            transform: translateY(-50%)
+
+                        span 
+                            display: flex
+                            align-items: center
+
+                        img 
+                            margin: 0 1rem 0 0
+                            height: 24px
+                            width: 24px
 
 

@@ -2,15 +2,29 @@
 @media screen and (max-width: 1080px)
     .about-grid
         margin-top: 0
-        // grid-template-columns: 1fr
-        // .about-avatar
-        //     display: none
-        
-// @media screen and (max-width: 768px)
-//     .about-grid
-//         grid-template-columns: 1fr
+
+    .skills-section 
+        .skills-card-grid
+            grid-column-gap: 1rem
+
+@media screen and (max-width: 900px)
+    .skills-section 
+        .skills-card-grid
+            grid-template-columns: 1fr 1fr
+            
+            .skills-card
+                margin-bottom: 2rem
 
 @media screen and (max-width: 570px)
     .about-grid
         grid-template-columns: 1fr
         margin-top: -170px
+
+
+@media screen and (max-width: 425px)
+    .skills-section 
+        .skills-card-grid
+            grid-template-columns: 1fr
+            
+            .skills-card
+                margin-bottom: 2rem
