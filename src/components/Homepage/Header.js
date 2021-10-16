@@ -1,7 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import headerBg from '../../img/header-bg.jpg'
 
 const Header = () => {
+    const [ className, setClassName ] = useState()
+    const handleToggle = () => {
+        setClassName('menu-show')
+        console.log('menu clicked')
+    }
+
+    
+
     return (
         <>
             <div className="section-container">
@@ -13,7 +21,7 @@ const Header = () => {
                             <h1>UI/UX DESIGNER</h1>
                             <a href="#!" className="btn">See Works</a>
                         </div>
-                        <div className="sidenav-menu">
+                        <div className="sidenav-menu" onClick={handleToggle}>
                             <div className="line-1"></div>
                             <div className="line-2"></div>
                             <div className="line-menu">MENU</div>
@@ -23,6 +31,7 @@ const Header = () => {
                         <a href="#section-1">
                             <div className="scroll-trigger"></div>
                             <p>SCROLL DOWN</p>
+                            
                         </a>
                     </div>
                 </div>
@@ -31,6 +40,8 @@ const Header = () => {
                     backgroundSize: "cover",
                     backgroundAttachment: "fixed",
                 }}></div>
+
+                <div className={`menu ${className}`}></div>
             </div>
         </>
     )

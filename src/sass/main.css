@@ -2,6 +2,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: #FBFBFB;
+  overflow-x: hidden;
 }
 
 a {
@@ -188,6 +189,29 @@ button {
 }
 .navbar .nav-flex ul li {
   margin-left: 35px;
+}
+
+.menu {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 80;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(100%);
+  background: #353535;
+}
+
+.menu-show {
+  animation: menuShow 1s forwards;
+  transition: all 1s ease;
+}
+@keyframes menuShow {
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .btn {
