@@ -7,10 +7,10 @@ const Header = () => {
     const [ className, setClassName ] = useState()
     const handleToggle = () => {
         setClassName('menu-show')
-        console.log('menu clicked')
     }
 
-    
+
+
 
     return (
         <>
