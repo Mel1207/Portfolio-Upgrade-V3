@@ -8,6 +8,7 @@ import iconReact from '../../img/icon-react.svg'
 import iconJquery from '../../img/icon-jquery.svg'
 import iconHtml from '../../img/icon-html.svg'
 import iconCss from '../../img/icon-css.svg'
+import quoteBg from '../../img/quotes-bg.jpg'
 
 const AboutPage = () => {
     
@@ -147,8 +148,13 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="quotes-section" style={{}}>
-                <h4>No matter how big or small your progress, <br /> progress is <strong>STILL</strong>a <strong>PROGRESS</strong></h4>
+            <div className="quotes-section" style={{
+                background: `url("${quoteBg}")`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center center'
+            }}>
+                <h4>No matter how big or small your progress, <br className="break" /> progress is <strong>STILL</strong> a <strong>PROGRESS</strong></h4>
             </div>
         </>
     )
