@@ -2,6 +2,7 @@
 @media screen and (max-width: 1080px)
     .about-grid
         margin-top: 0
+        align-items: center
 
     .skills-section 
         .skills-card-grid
@@ -17,6 +18,19 @@
         font-size: 1.5rem
 
 @media screen and (max-width: 900px)
+    .about-grid 
+        grid-template-columns: 1fr
+
+        .about-avatar
+            display: none
+
+        div:nth-child(2)
+            padding: 2rem 0 1rem 0
+
+    .about-gallery
+        grid-template-columns: 1fr
+
+
     .skills-section 
         .skills-card-grid
             grid-template-columns: 1fr
@@ -37,9 +51,9 @@
         
 
 @media screen and (max-width: 570px)
-    .about-grid
-        grid-template-columns: 1fr
-        margin-top: -170px
+    // .about-grid
+    //     grid-template-columns: 1fr
+    //     margin-top: -170px
 
 
 @media screen and (max-width: 425px)

@@ -144,39 +144,6 @@ const AboutPage = () => {
                                 </ul>
                             </div>
                         </div>
-                        {/* <div className="skills-card">
-                            <div className="skills-img-container" style={{
-                                padding: '1.5rem',
-                                background: `url("${galleryImg}")`,
-                                height: '150px',
-                                width: '100%',
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                position: 'relative'
-                            }}>
-                                <h4>FRONT-END</h4>
-                            </div>
-                            <div className="skills-card-content">
-                                <ul>
-                                    <li>
-                                        <span><img src={iconJavascript} alt="Javascript" />Javascript</span>
-                                    </li>
-                                    <li>
-                                        <span><img src={iconReact} alt="React.js" />React.js</span>
-                                    </li>
-                                    <li>
-                                        <span><img src={iconJquery} alt="Jquery" />Jquery</span>
-                                    </li>
-                                    <li>
-                                        <span><img src={iconHtml} alt="HTML5" />HTML5</span>
-                                    </li>
-                                    <li>
-                                        <span><img src={iconCss} alt="CSS3" />CSS3</span>
-                                    </li>
-                                   
-                                </ul>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
