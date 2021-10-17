@@ -147,6 +147,9 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+            <div className="quotes-section" style={{}}>
+                <h4>No matter how big or small your progress, <br /> progress is <strong>STILL</strong>a <strong>PROGRESS</strong></h4>
+            </div>
         </>
     )
 }
