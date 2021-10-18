@@ -15,14 +15,14 @@ export default {
             name: "description",
             type: "text"
         }, 
-        // {
-        //     name: 'mainImage',
-        //     title: 'Main image',
-        //     type: 'image',
-        //     options: {
-        //         hotspot: true,
-        //     },
-        // },
+        {
+            name: 'mainImage',
+            title: 'Main image',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        },
         {
             name: "projectType",
             title: "Project type",

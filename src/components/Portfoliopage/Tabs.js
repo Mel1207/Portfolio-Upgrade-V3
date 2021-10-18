@@ -8,6 +8,13 @@ const Tabs = () => {
         sanityClient.fetch(`*[_type == "portfolio"]{
             title,
             date,
+            mainImage{
+                asset->{
+                    _id,
+                    url
+                },
+                alt
+            },
             description,
             projectType,
             link,
@@ -31,7 +38,8 @@ const Tabs = () => {
                 <div className={toggleState === 1 ? "content  active-content" : "content"}>
                     <div className="project-card">
                     {portfolioData && portfolioData.map((portfolio, index) => (
-                        <article>
+                        <article key={index}>
+                            <img src={portfolio.mainImage.asset.url} alt={portfolio.title} />
                             <h3 className="section-subheader">
                                 <a href={portfolio.link} target="_blank" rel="noopener noreferrer" alt={portfolio.title}>{portfolio.title}</a>
                             </h3>
@@ -41,7 +49,7 @@ const Tabs = () => {
                                 <p>{portfolio.description}</p>
                                 <span>button for link of project</span>
                                 <h4>tech used</h4>
-                                <span style={{
+                                {/* <span style={{
                                     padding: '1rem',
                                     color: 'red',
                                     background: 'green',
@@ -52,7 +60,7 @@ const Tabs = () => {
 
                                 }}>{portfolio.tags.map(item => (
                                     <span>{item}</span>
-                                ))}</span>
+                                ))}</span> */}
                             </div>
                         </article>
                     ))}
