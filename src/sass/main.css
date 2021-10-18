@@ -217,7 +217,7 @@ button {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3rem;
   align-items: center;
-  margin-bottom: 2vh;
+  margin-bottom: 5vh;
 }
 .project-container img {
   width: 100%;
