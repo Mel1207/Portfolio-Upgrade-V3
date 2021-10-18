@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import sanityClient from "../../client"
+import iconLink from '../../img/icon-link.svg'
 
 const Tabs = () => {
     const [portfolioData, setPortfolioData] = useState(null);
@@ -46,21 +47,8 @@ const Tabs = () => {
                                 {/* <span>project type: {portfolio.projectType}</span> */}
                                 <p className="project-description">{portfolio.description}</p>
                                 <p className="project-tech">Technology used:</p>
-                                <span>button for link of project</span>
-                                
-                                {/* <span style={{
-                                    padding: '1rem',
-                                    color: 'red',
-                                    background: 'green',
-                                    borderRadius: '500px',
-                                    display: 'block',
-                                    width: 'max-content',
-                                    margin: '0 1rem'
-
-                                }}>{portfolio.tags.map(item => (
-                                    <span>{item}</span>
-                                ))}</span> */}
-                                
+                                <ul><li key={portfolio.tags}>{portfolio.tags}</li></ul>
+                                <a href={portfolio.link} rel="noopener noreferrer" className="project-link"><img src={iconLink} alt="link"  />Website link</a>
                             </div>
                         </div>
                     ))}

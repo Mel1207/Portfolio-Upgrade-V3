@@ -41,13 +41,8 @@ export default {
         },
         {
             name: "tags",
-            type: "array",
-            of: [
-                { type: "string" },
-            ],
-            options: {
-                layout: "tags"
-            }
+            title: "Tags",
+            type: "array"
         }
     ]
 }

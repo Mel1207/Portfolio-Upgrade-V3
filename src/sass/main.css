@@ -246,6 +246,19 @@ button {
   margin-bottom: 2.5vh;
   font-weight: 600;
 }
+.project-container .project-content .project-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #597BAE;
+  font-weight: 500;
+  cursor: pointer;
+}
+.project-container .project-content .project-link img {
+  height: 1.4rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
 
 *, html {
   margin: 0;
