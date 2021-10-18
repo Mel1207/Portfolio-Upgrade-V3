@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 // import portfolio from '../../../studio/schemas/portfolio';
-import sanityClient from "../../client"
+import aboutBg from '../../img/aboutBg.png'
 import Navbar from '../Navbar'
 import Tabs from './Tabs'
 
@@ -21,6 +21,14 @@ const PortfolioPage = () => {
     return (
         <>
             <Navbar />
+            <div className="about-bg" style={{
+                background: `url("${aboutBg}")`,
+                backgroundAttachment: 'fixed',
+                backgroundRepeat: 'no-repeat',
+                height: '60vh',
+                width: '100%',
+                display: 'block'
+            }}></div>
             <div className="container">
                 <Tabs />
                 {/* <div className="project-card">

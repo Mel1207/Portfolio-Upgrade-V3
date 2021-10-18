@@ -1,6 +1,19 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import sanityClient from "../../client"
 
 const Tabs = () => {
+    const [portfolioData, setPortfolioData] = useState(null);
+
+    useEffect(() => {
+        sanityClient.fetch(`*[_type == "portfolio"]{
+            title,
+            date,
+            description,
+            projectType,
+            link,
+            tags
+        }`).then(data => setPortfolioData(data)).catch(console.error);
+    }, []);
 
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) => {
@@ -16,21 +29,37 @@ const Tabs = () => {
             </div>
             <div className="content-tabs">
                 <div className={toggleState === 1 ? "content  active-content" : "content"}>
-                    <h2>Content 1</h2>
-                    <hr />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                        praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-                        vel voluptatum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nihil officia esse. Obcaecati autem ducimus non repudiandae nihil commodi alias adipisci veniam voluptatem cupiditate, eos sapiente consequatur omnis dolor, illo ipsa ut, a eius culpa. Corrupti quas laboriosam recusandae aut omnis illo. Et earum eaque quas! Eum debitis hic harum, magnam earum facilis, enim ad dolores sapiente saepe sunt a non neque ratione obcaecati laborum nam dolorum omnis totam. Eaque tenetur necessitatibus consequatur accusantium, voluptas mollitia dolor iure obcaecati incidunt suscipit quod ut maxime vitae laudantium assumenda similique eius delectus! Rem ex qui atque sequi suscipit obcaecati eligendi dicta quam!
-                    </p>
+                    <div className="project-card">
+                    {portfolioData && portfolioData.map((portfolio, index) => (
+                        <article>
+                            <h3 className="section-subheader">
+                                <a href={portfolio.link} target="_blank" rel="noopener noreferrer" alt={portfolio.title}>{portfolio.title}</a>
+                            </h3>
+                            <div>
+                                <span>published: { new Date(portfolio.date).toDateString()}</span>
+                                <span>project type: {portfolio.projectType}</span>
+                                <p>{portfolio.description}</p>
+                                <span>button for link of project</span>
+                                <h4>tech used</h4>
+                                <span style={{
+                                    padding: '1rem',
+                                    color: 'red',
+                                    background: 'green',
+                                    borderRadius: '500px',
+                                    display: 'block',
+                                    width: 'max-content',
+                                    margin: '0 1rem'
+
+                                }}>{portfolio.tags.map(item => (
+                                    <span>{item}</span>
+                                ))}</span>
+                            </div>
+                        </article>
+                    ))}
+                </div>
                 </div>
                 <div className={toggleState === 2 ? "content  active-content" : "content"}>
-                    <h2>Content 2</h2>
-                    <hr />
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                        voluptatum qui adipisci.
-                    </p>
+                    <h1>content2</h1>
                 </div>
             </div>
         </>
