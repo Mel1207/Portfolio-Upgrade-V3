@@ -40,9 +40,16 @@ export default {
             type: "url"
         },
         {
+            name: "repoLink",
+            type: "url"
+        },
+        {
             name: "tags",
             title: "Tags",
-            type: "array"
+            type: "array",
+            of: [
+                {name: 'tagItem', type: 'string'}
+            ]
         }
     ]
 }

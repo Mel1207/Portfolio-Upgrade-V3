@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import sanityClient from "../../client"
 import iconLink from '../../img/icon-link.svg'
+import iconLinkGithub from '../../img/nav-logoBlack-github.svg'
 
 const Tabs = () => {
     const [portfolioData, setPortfolioData] = useState(null);
@@ -19,6 +20,7 @@ const Tabs = () => {
             description,
             projectType,
             link,
+            repoLink,
             tags
         }`).then(data => setPortfolioData(data)).catch(console.error);
     }, []);
@@ -48,7 +50,10 @@ const Tabs = () => {
                                 <p className="project-description">{portfolio.description}</p>
                                 <p className="project-tech">Technology used:</p>
                                 <ul><li key={portfolio.tags}>{portfolio.tags}</li></ul>
-                                <a href={portfolio.link} rel="noopener noreferrer" className="project-link"><img src={iconLink} alt="link"  />Website link</a>
+                                <div className="project-navigation-links">
+                                    <a href={portfolio.link} rel="noopener noreferrer" className="project-link"><img src={iconLink} alt="link"  />Website link</a>
+                                    <a href={portfolio.repoLink} rel="noopener noreferrer" className="repository-link"><img src={iconLinkGithub} alt="link"  />Repository</a>
+                                </div>
                             </div>
                         </div>
                     ))}

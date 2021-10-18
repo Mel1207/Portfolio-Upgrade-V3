@@ -56,18 +56,29 @@
         .project-tech
             font-size: 1.2rem
             color: $cBlack
-            margin-bottom: 2.5vh
+            // margin-bottom: 2.5vh
             font-weight: 600
 
-        .project-link
+        .project-navigation-links
             display: flex
             align-items: center
-            font-size: 1.3rem
-            color: $cBlue
-            font-weight: 500
-            cursor: pointer
+            margin-top: 2rem
 
-            img 
-                height: 1.4rem
-                width: auto
-                margin-right: .5rem
+            .project-link, .repository-link
+                display: flex
+                align-items: center
+                font-size: 1.3rem
+                font-weight: 500
+                cursor: pointer
+                margin-right: 1.5rem
+
+                img 
+                    height: 1.4rem
+                    width: auto
+                    margin-right: .5rem
+
+            .project-link
+                color: $cBlue
+
+            .repository-link
+                color: $cBlack

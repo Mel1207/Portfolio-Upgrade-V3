@@ -243,21 +243,31 @@ button {
 .project-container .project-content .project-tech {
   font-size: 1.2rem;
   color: #353535;
-  margin-bottom: 2.5vh;
   font-weight: 600;
 }
-.project-container .project-content .project-link {
+.project-container .project-content .project-navigation-links {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.project-container .project-content .project-navigation-links .project-link, .project-container .project-content .project-navigation-links .repository-link {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
-  color: #597BAE;
   font-weight: 500;
   cursor: pointer;
+  margin-right: 1.5rem;
 }
-.project-container .project-content .project-link img {
+.project-container .project-content .project-navigation-links .project-link img, .project-container .project-content .project-navigation-links .repository-link img {
   height: 1.4rem;
   width: auto;
   margin-right: 0.5rem;
+}
+.project-container .project-content .project-navigation-links .project-link {
+  color: #597BAE;
+}
+.project-container .project-content .project-navigation-links .repository-link {
+  color: #353535;
 }
 
 *, html {
