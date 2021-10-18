@@ -2,27 +2,29 @@ import React, { useEffect, useState } from 'react'
 // import portfolio from '../../../studio/schemas/portfolio';
 import sanityClient from "../../client"
 import Navbar from '../Navbar'
+import Tabs from './Tabs'
 
 const PortfolioPage = () => {
-    const [portfolioData, setPortfolioData] = useState(null);
+    // const [portfolioData, setPortfolioData] = useState(null);
 
-    useEffect(() => {
-        sanityClient.fetch(`*[_type == "portfolio"]{
-            title,
-            date,
-            description,
-            projectType,
-            link,
-            tags
-        }`).then(data => setPortfolioData(data)).catch(console.error);
-    }, []);
+    // useEffect(() => {
+    //     sanityClient.fetch(`*[_type == "portfolio"]{
+    //         title,
+    //         date,
+    //         description,
+    //         projectType,
+    //         link,
+    //         tags
+    //     }`).then(data => setPortfolioData(data)).catch(console.error);
+    // }, []);
 
     return (
         <>
             <Navbar />
             <div className="container">
                 <h3>Front end projects</h3>
-                <div className="project-card">
+                <Tabs />
+                {/* <div className="project-card">
                     {portfolioData && portfolioData.map((portfolio, index) => (
                         <article>
                             <h3 className="section-subheader">
@@ -49,7 +51,7 @@ const PortfolioPage = () => {
                             </div>
                         </article>
                     ))}
-                </div>
+                </div> */}
             </div>
         </>
     )

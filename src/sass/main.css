@@ -181,6 +181,14 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
 *, html {
   margin: 0;
   padding: 0;
