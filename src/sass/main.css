@@ -212,6 +212,40 @@ button {
   display: block;
 }
 
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.project-container img {
+  width: 100%;
+  height: auto;
+}
+.project-container .project-content {
+  padding: 1rem 0;
+}
+.project-container .project-content .project-name {
+  font-size: 1.8rem;
+  color: #D76D6D;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1vh;
+}
+.project-container .project-content .project-date, .project-container .project-content .project-description {
+  display: block;
+  font-size: 1.2rem;
+  color: #353535;
+  margin-bottom: 2.5vh;
+}
+.project-container .project-content .project-tech {
+  font-size: 1.2rem;
+  color: #353535;
+  margin-bottom: 2.5vh;
+  font-weight: 600;
+}
+
 *, html {
   margin: 0;
   padding: 0;

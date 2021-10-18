@@ -1,0 +1,59 @@
+.project-tabs
+    margin: 50px  0
+    border-bottom: 1px solid rgba(#DEDEDE, .8)
+    .tabs 
+        cursor: pointer
+        font-size: 1.1rem
+        width: max-content
+        padding: .7rem 1.5rem
+        background: rgba(#DEDEDE, .2)
+        transition: 0.5s ease
+        color: rgba($cBlack, .5)
+        position: relative
+
+        &:hover
+            background: $cRed50
+            color: $cRed
+
+    .tabs-active
+        background: $cRed50
+        color: $cRed
+
+.content
+    display: none
+
+.active-content
+    display: block
+
+.project-container
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 3rem
+    align-items: center
+    margin-bottom: 2vh
+
+    img 
+        width: 100%
+        height: auto
+
+    .project-content
+        padding: 1rem 0
+
+        .project-name
+            font-size: 1.8rem
+            color: $cRed
+            font-weight: 500
+            display: block
+            margin-bottom: 1vh
+
+        .project-date, .project-description
+            display: block
+            font-size: 1.2rem
+            color: $cBlack
+            margin-bottom: 2.5vh
+
+        .project-tech
+            font-size: 1.2rem
+            color: $cBlack
+            margin-bottom: 2.5vh
+            font-weight: 600
