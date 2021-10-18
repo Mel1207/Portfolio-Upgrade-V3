@@ -22,7 +22,6 @@ const PortfolioPage = () => {
         <>
             <Navbar />
             <div className="container">
-                <h3>Front end projects</h3>
                 <Tabs />
                 {/* <div className="project-card">
                     {portfolioData && portfolioData.map((portfolio, index) => (

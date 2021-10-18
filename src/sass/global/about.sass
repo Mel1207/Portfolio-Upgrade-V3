@@ -135,6 +135,24 @@
         left: 50%
         transform: translate(-50%, -50%)
 
+.project-tabs
+    .tabs 
+        cursor: pointer
+        font-size: 1.2rem
+        width: max-content
+        padding: .7rem 1rem
+        background: rgba(#DEDEDE, .2)
+        transition: 0.5s ease
+        color: rgba($cBlack, .5)
+        position: relative
+
+        &:hover
+            background: $cRed50
+            color: $cRed
+
+    .tabs-active
+        background: $cRed50
+        color: $cRed
 
 .content
     display: none

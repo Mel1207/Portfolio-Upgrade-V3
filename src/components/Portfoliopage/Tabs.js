@@ -10,9 +10,9 @@ const Tabs = () => {
 
     return (
         <>
-            <div className="bloc-tabs">
-                <button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}>Tab 1</button>
-                <button className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(2)}>Tab 2</button>
+            <div className="project-tabs">
+                <button className={toggleState === 1 ? "tabs tabs-active" : "tabs"} onClick={() => toggleTab(1)}>FRONT-END DESIGNS</button>
+                <button className={toggleState === 2 ? "tabs tabs-active" : "tabs"} onClick={() => toggleTab(2)}>UI/MOCKUP DESIGNS</button>
             </div>
             <div className="content-tabs">
                 <div className={toggleState === 1 ? "content  active-content" : "content"}>
