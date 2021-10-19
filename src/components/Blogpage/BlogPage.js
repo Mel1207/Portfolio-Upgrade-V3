@@ -50,10 +50,13 @@ const BlogPage = () => {
                         <div key={index} className="blogs-card">
                             <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
                             <div className="blogs-content">
-                                <Link to={"/blog/" + post.slug.current} key={post.slug.current}><h5>{post.title}</h5></Link>
-                                <span>{`${new Date(post.date).getMonth()}/${new Date(post.date).getDate()}/${new Date(post.date).getFullYear()}`}</span>
-                                <div>{post.subHeader}</div>
-                                <Link to={"/blog/" + post.slug.current} className="btn">Read blog</Link>
+                                <div className="blogs-box-top">
+                                    <Link to={"/blog/" + post.slug.current} key={post.slug.current}><h4 className="blogs-title">{post.title}</h4></Link>
+                                    <span className="blogs-date">{`${new Date(post.date).getMonth()}/${new Date(post.date).getDate()}/${new Date(post.date).getFullYear()}`}</span>
+                                    <div className="blogs-subheader"><p>{post.subHeader}</p></div>
+                                </div>
+                                
+                                <Link to={"/blog/" + post.slug.current} className="btn-small">Read blog</Link>
                             </div>  
                            
                         </div>
