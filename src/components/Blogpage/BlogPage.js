@@ -43,22 +43,17 @@ const BlogPage = () => {
                 </div>
             </div>
             <div className="container">
-                {postData && postData.map((post, index) => (
-                    <div key={index} >
-                        
-                        <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
-                        <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
-                            <h3>{post.title}</h3>
-                        </Link>
-                        <span>{post.date}</span>
-                        <div>
-                            {post.subHeader}
+                <div className="blogs-section">
+                    {postData && postData.map((post, index) => (
+                        <div key={index} className="blogs-card">
+                            <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
+                            <Link to={"/blog/" + post.slug.current} key={post.slug.current}><h3>{post.title}</h3></Link>
+                            <span>{post.date}</span>
+                            <div>{post.subHeader}</div>
+                            <Link to={"/blog/" + post.slug.current} key={post.slug.current} className="btn">Read blog</Link>
                         </div>
-                        <Link to={"/blog/" + post.slug.current} key={post.slug.current} className="btn">
-                            Read blog
-                        </Link>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </>
     )
