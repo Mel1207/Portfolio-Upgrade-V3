@@ -790,6 +790,21 @@ button {
   }
 }
 @media screen and (max-width: 570px) {
+  .navbar {
+    height: 130px;
+  }
+
+  .nav-flex {
+    flex-direction: column;
+  }
+  .nav-flex ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-flex ul li {
+    margin-left: 0 !important;
+  }
+
   .blogs-section {
     grid-template-columns: 1fr;
   }
