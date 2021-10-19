@@ -51,6 +51,9 @@ const BlogPage = () => {
                         <div>
                             {post.subHeader}
                         </div>
+                        <Link to={"/blog/" + post.slug.current} key={post.slug.current} className="btn">
+                            Read blog
+                        </Link>
                     </div>
                 ))}
             </div>
