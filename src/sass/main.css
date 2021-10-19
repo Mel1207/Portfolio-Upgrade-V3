@@ -275,7 +275,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  grid-gap: 1rem;
+  grid-gap: 1.1rem;
 }
 .blogs-section .blogs-card {
   width: 100%;
@@ -287,6 +287,9 @@ button {
   width: 100%;
   height: 230px;
   object-fit: cover;
+}
+.blogs-section .blogs-card .blogs-content {
+  padding: 1.5rem;
 }
 
 *, html {
