@@ -19,7 +19,8 @@ const BlogPage = () => {
                 },
                 alt
             },
-            subHeader
+            subHeader,
+            date
         }`).then(data => setPostData(data)).catch(console.error)
     })
 
@@ -44,10 +45,12 @@ const BlogPage = () => {
             <div className="container">
                 {postData && postData.map((post, index) => (
                     <div key={index} >
+                        
+                        <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
                         <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
                             <h3>{post.title}</h3>
                         </Link>
-                        <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
+                        <span>{post.date}</span>
                         <div>
                             {post.subHeader}
                         </div>
