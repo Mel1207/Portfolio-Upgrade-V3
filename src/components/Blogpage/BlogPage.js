@@ -24,8 +24,6 @@ const BlogPage = () => {
         }`).then(data => setPostData(data)).catch(console.error)
     })
 
-    const formatDate = new Date()
-
     return (
         <>  
             <Navbar />
@@ -55,7 +53,6 @@ const BlogPage = () => {
                                     <span className="blogs-date">{`${new Date(post.date).getMonth()}/${new Date(post.date).getDate()}/${new Date(post.date).getFullYear()}`}</span>
                                     <div className="blogs-subheader"><p>{post.subHeader}</p></div>
                                 </div>
-                                
                                 <Link to={"/blog/" + post.slug.current} className="btn-small">Read blog</Link>
                             </div>  
                            

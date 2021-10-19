@@ -293,6 +293,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 280px;
 }
 .blogs-section .blogs-card .blogs-content .blogs-box-top .blogs-title {
   color: #353535;
@@ -308,12 +309,10 @@ button {
   width: max-content;
   background: rgba(109, 151, 215, 0.2);
 }
-.blogs-section .blogs-card .blogs-content .blogs-subheader {
-  background: #eee;
-  margin: 1rem 0 0 0;
-  text-overflow: ellipsis;
+.blogs-section .blogs-card .blogs-content .blogs-box-top .blogs-subheader {
+  margin-top: 1rem;
 }
-.blogs-section .blogs-card .blogs-content .blogs-subheader p {
+.blogs-section .blogs-card .blogs-content .blogs-box-top .blogs-subheader p {
   line-height: 1.4rem;
   font-size: 1rem;
   display: -webkit-box;
