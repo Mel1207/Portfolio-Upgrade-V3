@@ -1,18 +1,27 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import aboutBg from '../../img/aboutBg.png'
 import Navbar from '../Navbar'
-// import sanityClient from "../../client"
+import sanityClient from "../../client"
+
 
 const BlogPage = () => {
-    // const [postData, setPost] = useState(null)
+    const [postData, setPostData] = useState(null)
 
-    // useEffect(() => {
-    //     sanityClient.fetch(`*[_type == "post"]{
-    //         title, 
-    //         slug,
-    //         mainImage
-    //     }`)
-    // })
+    useEffect(() => {
+        sanityClient.fetch(`*[_type == "post"]{
+            title,
+            slug,
+            mainImage{
+                asset->{
+                    _id,
+                    url
+                },
+                alt
+            },
+            subHeader
+        }`).then(data => setPostData(data)).catch(console.error)
+    })
 
     return (
         <>  
@@ -33,11 +42,19 @@ const BlogPage = () => {
                 </div>
             </div>
             <div className="container">
-                <h1>THIS IS BLOG PAGE</h1>
+                {postData && postData.map((post, index) => (
+                    <div key={index} >
+                        <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
+                            <h3>{post.title}</h3>
+                        </Link>
+                        <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
+                        <div>
+                            {post.subHeader}
+                        </div>
+                    </div>
+                ))}
             </div>
-            
         </>
-       
     )
 }
 

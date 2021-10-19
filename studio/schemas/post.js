@@ -32,6 +32,11 @@ export default {
       },
     },
     {
+      name: 'subHeader',
+      title: 'Sub Header',
+      type: "text"
+    },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
