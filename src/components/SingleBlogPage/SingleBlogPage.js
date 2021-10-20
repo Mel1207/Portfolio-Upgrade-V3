@@ -34,7 +34,14 @@ const SingleBlogPage = () => {
     }, [slug])
     
 
-    if(!singleBlog) return <div><h1>Loading...</h1></div>
+    if(!singleBlog) return (
+        <>
+            <Navbar />
+            <div className="container">
+                <h1>Loading...</h1>
+            </div>
+        </>
+    )
 
     return (
         <>
