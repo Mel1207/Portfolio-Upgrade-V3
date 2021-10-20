@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import sanityClient from '../../client'
 import { useParams } from 'react-router'
 import imageUrlBuilder from '@sanity/image-url'
+import BlockContent from '@sanity/block-content-to-react'
 import Navbar from '../Navbar'
 import { Link } from 'react-router-dom'
 
@@ -48,9 +49,11 @@ const SingleBlogPage = () => {
             <div className="container blog-container">
                 <img className="blog-mainTop-img" src={singleBlog.mainImage.asset.url} />
                 <div className="blog-body">
-                    <h1>This is block content</h1>
+                    <BlockContent blocks={singleBlog.body} projectId="1x1zge2p" dataset="production"/>
+
+                    <Link to="/blog/">Back to blogs</Link>
                 </div>
-                <Link to="/blog/">Back to blogs</Link>
+                
             </div>
         </>
     )
