@@ -372,6 +372,11 @@ button {
   width: max-content;
   background: #597BAE;
 }
+.blog-container .blog-mainTop-img .blog-mainTop-author {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
 .blog-container .blog-body {
   padding: 3rem 5rem;
 }

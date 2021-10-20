@@ -52,7 +52,15 @@ const SingleBlogPage = () => {
                     <img src={singleBlog.mainImage.asset.url} />
                     <div className="blog-mainTop-info">
                         <h3>{singleBlog.title}</h3>
-                        <div><p className="blog-mainTop-date">{`${new Date(singleBlog.date).getMonth()}/${new Date(singleBlog.date).getDate()}/${new Date(singleBlog.date).getFullYear()}`}</p></div>
+                        <div>
+                            <p className="blog-mainTop-date">{`${new Date(singleBlog.date).getMonth()}/${new Date(singleBlog.date).getDate()}/${new Date(singleBlog.date).getFullYear()}`}</p>
+                            <span>|</span>
+                            <span>
+                                <img className="blog-mainTop-author" src={urlFor(singleBlog.authorImage).url()} alt={singleBlog.name} />{singleBlog.name}
+                            </span>
+
+                           
+                        </div>
                     </div>
                 </div>
                 
