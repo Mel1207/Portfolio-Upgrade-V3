@@ -56,7 +56,7 @@ const SingleBlogPage = () => {
             </div>
             <div className="container blog-container">
                 <div className="blog-mainTop-img">
-                    <img src={singleBlog.mainImage.asset.url} />
+                    <img src={singleBlog.mainImage.asset.url} alt="main asset" />
                     <div className="blog-mainTop-info">
                         <h3 className="blog-mainTop-title">{singleBlog.title}</h3>
                         <div className="blog-mainTop-credit">

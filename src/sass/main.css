@@ -20,7 +20,6 @@ h1 {
 
 h2 {
   color: #353535;
-  font-weight: 400;
   width: max-content;
 }
 
@@ -431,8 +430,14 @@ button {
 }
 .blog-container .blog-body ul {
   list-style-type: disc;
-  padding-left: 1.1rem;
-  margin: 20px 0;
+  padding-left: 0.1rem;
+  margin: 20px;
+}
+.blog-container .blog-body ul li {
+  ine-height: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #353535;
 }
 .blog-container .blog-body h1, .blog-container .blog-body h2, .blog-container .blog-body h3, .blog-container .blog-body h4 {
   margin-top: 2rem;
@@ -545,6 +550,7 @@ button {
   padding-right: 15px;
   margin-bottom: 10px;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 .section-header::after {
   content: "";
