@@ -548,6 +548,20 @@ button {
   background: #d35c5c;
 }
 
+.btn-back {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #597BAE;
+  margin-top: 3rem;
+}
+.btn-back img {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 10px;
+}
+
 .section-header {
   position: relative;
   padding-right: 15px;

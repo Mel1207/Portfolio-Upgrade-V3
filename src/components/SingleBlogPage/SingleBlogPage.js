@@ -5,6 +5,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import Navbar from '../Navbar'
 import { Link } from 'react-router-dom'
+import iconBack from '../../img/icon-back.svg'
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -71,7 +72,7 @@ const SingleBlogPage = () => {
                 
                 <div className="blog-body">
                     <BlockContent blocks={singleBlog.body} projectId="1x1zge2p" dataset="production"/>
-                    <Link to="/blog/">Back to blogs</Link>
+                    <Link to="/blog/" className="btn-back"><img src={iconBack} alt="back icon" />Go back to blogs</Link>
                 </div>
                 
             </div>
