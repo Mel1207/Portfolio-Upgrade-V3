@@ -27,6 +27,7 @@ const SingleBlogPage = () => {
                 },
             },
             body,
+            date,
             "name": author->name,
             "authorImage": author->image
         }`).then(data => setSingleBlog(data[0])).catch(console.error)
@@ -47,7 +48,14 @@ const SingleBlogPage = () => {
                 }}>
             </div>
             <div className="container blog-container">
-                <img className="blog-mainTop-img" src={singleBlog.mainImage.asset.url} />
+                <div className="blog-mainTop-img">
+                    <img src={singleBlog.mainImage.asset.url} />
+                    <div className="blog-mainTop-info">
+                        <h3>{singleBlog.title}</h3>
+                        <div><p className="blog-mainTop-date">{`${new Date(singleBlog.date).getMonth()}/${new Date(singleBlog.date).getDate()}/${new Date(singleBlog.date).getFullYear()}`}</p></div>
+                    </div>
+                </div>
+                
                 <div className="blog-body">
                     <BlockContent blocks={singleBlog.body} projectId="1x1zge2p" dataset="production"/>
 
