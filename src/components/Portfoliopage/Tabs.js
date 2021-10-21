@@ -76,9 +76,9 @@ const Tabs = () => {
                 </div>
                 </div>
                 <div className={toggleState === 2 ? "content  active-content" : "content"}>
-                    <div className="design-grid">
+                    <div className="design-container">
                         {designData && designData.map((designItem, index) => (
-                            <div key={index}>
+                            <div key={index} className="design-card"> 
                                 <img src={designItem.mainImage.asset.url} alt={designItem.title} />
                             </div>
                         ))}
