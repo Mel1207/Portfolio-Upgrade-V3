@@ -5,6 +5,7 @@ import iconLinkGithub from '../../img/nav-logoBlack-github.svg'
 
 const Tabs = () => {
     const [portfolioData, setPortfolioData] = useState(null);
+    const [designData, setDesignData] = useState(null);
 
     useEffect(() => {
         sanityClient.fetch(`*[_type == "portfolio"]{
@@ -23,6 +24,22 @@ const Tabs = () => {
             repoLink,
             tags
         }`).then(data => setPortfolioData(data)).catch(console.error);
+    }, []);
+
+    useEffect(() => {
+        sanityClient.fetch(`*[_type == "design"]{
+            title, 
+            date,
+            mainImage{
+                asset->{
+                    _id,
+                    url
+                },
+                alt
+            },
+            description,
+            link
+        }`).then(dataDesign => setDesignData(dataDesign)).catch(console.error);
     }, []);
 
     const [toggleState, setToggleState] = useState(1);
@@ -59,7 +76,13 @@ const Tabs = () => {
                 </div>
                 </div>
                 <div className={toggleState === 2 ? "content  active-content" : "content"}>
-                    <h1>content2</h1>
+                    <div className="design-grid">
+                        {designData && designData.map((designItem, index) => (
+                            <div key={index}>
+                                <img src={designItem.mainImage.asset.url} alt={designItem.title} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </>
