@@ -279,6 +279,9 @@ button {
   grid-column-gap: 1.2rem;
   padding-bottom: 2rem;
 }
+.design-container .design-card {
+  margin-bottom: 1rem;
+}
 .design-container .design-card img {
   width: 100%;
   filter: drop-shadow(8px 8px 3px rgba(0, 0, 0, 0.1));
@@ -905,6 +908,13 @@ button {
   .blogs-section {
     grid-template-columns: 1fr 1fr;
   }
+
+  .design-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .design-container .design-card {
+    margin-bottom: 1rem;
+  }
 }
 @media screen and (max-width: 900px) {
   .about-grid {
@@ -936,6 +946,10 @@ button {
   }
   .section-footer .footer-base {
     margin-top: 5vh;
+  }
+
+  .design-container {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 570px) {
