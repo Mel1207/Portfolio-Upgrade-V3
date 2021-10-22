@@ -113,6 +113,10 @@ button {
   bottom: 0;
   background: rgba(255, 255, 255, 0.9);
 }
+.skills-section .container {
+  position: relative;
+  z-index: 5;
+}
 .skills-section .section-subheader {
   margin-bottom: 2.5rem;
 }
@@ -183,6 +187,13 @@ button {
   padding: 3.5rem 0 4.5rem 0;
 }
 
+.portfolioVer-continer {
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+}
+
 .quotes-section {
   height: 50vh;
   width: 100%;
@@ -230,45 +241,45 @@ button {
   display: block;
 }
 
-.project-container {
+.project-container, .portfolioVer-continer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3rem;
   align-items: center;
   margin-bottom: 5vh;
 }
-.project-container img {
+.project-container img, .portfolioVer-continer img {
   width: 100%;
   height: auto;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));
 }
-.project-container .project-content {
+.project-container .project-content, .project-container .portfolioVer-content, .portfolioVer-continer .project-content, .portfolioVer-continer .portfolioVer-content {
   padding: 1rem 0;
 }
-.project-container .project-content .project-name {
+.project-container .project-content .project-name, .project-container .portfolioVer-content .project-name, .portfolioVer-continer .project-content .project-name, .portfolioVer-continer .portfolioVer-content .project-name {
   font-size: 1.8rem;
   color: #D76D6D;
   font-weight: 500;
   display: block;
   margin-bottom: 1vh;
 }
-.project-container .project-content .project-date, .project-container .project-content .project-description {
+.project-container .project-content .project-date, .project-container .project-content .project-description, .project-container .portfolioVer-content .project-date, .project-container .portfolioVer-content .project-description, .portfolioVer-continer .project-content .project-date, .portfolioVer-continer .project-content .project-description, .portfolioVer-continer .portfolioVer-content .project-date, .portfolioVer-continer .portfolioVer-content .project-description {
   display: block;
   font-size: 1.2rem;
   color: #353535;
   margin-bottom: 2.5vh;
 }
-.project-container .project-content .project-tech {
+.project-container .project-content .project-tech, .project-container .portfolioVer-content .project-tech, .portfolioVer-continer .project-content .project-tech, .portfolioVer-continer .portfolioVer-content .project-tech {
   font-size: 1.2rem;
   color: #353535;
   font-weight: 600;
 }
-.project-container .project-content .project-navigation-links {
+.project-container .project-content .project-navigation-links, .project-container .portfolioVer-content .project-navigation-links, .portfolioVer-continer .project-content .project-navigation-links, .portfolioVer-continer .portfolioVer-content .project-navigation-links {
   display: flex;
   align-items: center;
   margin-top: 2rem;
 }
-.project-container .project-content .project-navigation-links .project-link, .project-container .project-content .project-navigation-links .repository-link {
+.project-container .project-content .project-navigation-links .project-link, .project-container .project-content .project-navigation-links .repository-link, .project-container .portfolioVer-content .project-navigation-links .project-link, .project-container .portfolioVer-content .project-navigation-links .repository-link, .portfolioVer-continer .project-content .project-navigation-links .project-link, .portfolioVer-continer .project-content .project-navigation-links .repository-link, .portfolioVer-continer .portfolioVer-content .project-navigation-links .project-link, .portfolioVer-continer .portfolioVer-content .project-navigation-links .repository-link {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
@@ -276,15 +287,15 @@ button {
   cursor: pointer;
   margin-right: 1.5rem;
 }
-.project-container .project-content .project-navigation-links .project-link img, .project-container .project-content .project-navigation-links .repository-link img {
+.project-container .project-content .project-navigation-links .project-link img, .project-container .project-content .project-navigation-links .repository-link img, .project-container .portfolioVer-content .project-navigation-links .project-link img, .project-container .portfolioVer-content .project-navigation-links .repository-link img, .portfolioVer-continer .project-content .project-navigation-links .project-link img, .portfolioVer-continer .project-content .project-navigation-links .repository-link img, .portfolioVer-continer .portfolioVer-content .project-navigation-links .project-link img, .portfolioVer-continer .portfolioVer-content .project-navigation-links .repository-link img {
   height: 1.4rem;
   width: auto;
   margin-right: 0.5rem;
 }
-.project-container .project-content .project-navigation-links .project-link {
+.project-container .project-content .project-navigation-links .project-link, .project-container .portfolioVer-content .project-navigation-links .project-link, .portfolioVer-continer .project-content .project-navigation-links .project-link, .portfolioVer-continer .portfolioVer-content .project-navigation-links .project-link {
   color: #597BAE;
 }
-.project-container .project-content .project-navigation-links .repository-link {
+.project-container .project-content .project-navigation-links .repository-link, .project-container .portfolioVer-content .project-navigation-links .repository-link, .portfolioVer-continer .project-content .project-navigation-links .repository-link, .portfolioVer-continer .portfolioVer-content .project-navigation-links .repository-link {
   color: #353535;
 }
 
@@ -969,6 +980,10 @@ button {
   }
 
   .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolioVer-continer {
     grid-template-columns: 1fr;
   }
 
