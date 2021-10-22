@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import sanityClient from "../../client"
 import iconLink from '../../img/icon-link.svg'
 import iconLinkGithub from '../../img/nav-logoBlack-github.svg'
+import iconNext from '../../img/icon-next.svg'
 
 const Tabs = () => {
     const [portfolioData, setPortfolioData] = useState(null);
@@ -80,6 +81,7 @@ const Tabs = () => {
                         {designData && designData.map((designItem, index) => (
                             <div key={index} className="design-card"> 
                                 <img src={designItem.mainImage.asset.url} alt={designItem.title} />
+                                <a href={designItem.link} className="behance-link">Go to behance <img src={iconNext} alt="icon next"/></a>
                             </div>
                         ))}
                     </div>

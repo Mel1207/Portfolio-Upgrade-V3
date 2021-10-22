@@ -92,6 +92,61 @@
 
     .design-card
         margin-bottom: 1rem
+        width: 100%
+        height: 255px
+        position: relative
+        
+
         img 
             width: 100%
+            height: 100%
             filter: drop-shadow(8px 8px 3px rgba(0, 0, 0, 0.1))
+            object-fit: cover
+
+        .behance-link
+            position: absolute
+            display: flex
+            align-items: center
+            font-weight: 500
+            font-size: 1.2rem
+            color: $cWhite
+            z-index: 5
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            opacity: 0
+
+            img 
+                height: 1.5rem 
+                width: 1.5rem
+                margin-left: 10px
+                transition: 0.3s
+
+            &:hover
+                img 
+                    margin-left: 20px
+
+        &::after
+            content: ""
+            position: absolute
+            height: 100%
+            width: 100%
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            opacity: 0
+            background: rgba(0, 0, 0, 0.3)
+            backdrop-filter: blur(0)
+            outline: 2px solid $cWhite
+            outline-offset: 0
+            transition: all 0.5s ease
+
+        &:hover
+            .behance-link
+                opacity: 1
+
+            &::after
+                opacity: 1
+                outline-offset: -15px
+                backdrop-filter: blur(15px)
