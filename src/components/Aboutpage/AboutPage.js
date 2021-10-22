@@ -10,6 +10,7 @@ import iconHtml from '../../img/icon-html.svg'
 import iconCss from '../../img/icon-css.svg'
 import quoteBg from '../../img/quotes-bg.jpg'
 import skillsBg from '../../img/skills-bg.jpg'
+import PortfolioVersions from './PortfolioVersions'
 
 const AboutPage = () => {
     
@@ -153,6 +154,9 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+
+            <PortfolioVersions />
+            
             <div className="quotes-section" style={{
                 background: `url("${quoteBg}")`,
                 backgroundRepeat: 'no-repeat',
