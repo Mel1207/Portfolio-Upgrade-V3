@@ -51,8 +51,20 @@
 
 
 .skills-section
-    padding: 2.5rem 0
+    padding: 3rem 0 4.5rem 0
     position: relative
+    position: relative
+
+    &::after
+        content: ""
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: rgba($cWhite, 0.9)
 
     .section-subheader 
         margin-bottom: 2.5rem

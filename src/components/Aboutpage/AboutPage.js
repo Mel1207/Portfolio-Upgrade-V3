@@ -9,6 +9,7 @@ import iconJquery from '../../img/icon-jquery.svg'
 import iconHtml from '../../img/icon-html.svg'
 import iconCss from '../../img/icon-css.svg'
 import quoteBg from '../../img/quotes-bg.jpg'
+import skillsBg from '../../img/skills-bg.jpg'
 
 const AboutPage = () => {
     
@@ -41,7 +42,11 @@ const AboutPage = () => {
                     <img src={galleryImg} alt="gallery" />
                 </div>
             </div>
-            <div className="skills-section">
+            <div className="skills-section" style={{
+                background: `url("${skillsBg}")`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+            }}>
                 <div className="container">
                     <h2 className="section-header">Technical skills</h2>
                     <h3 className="section-subheader">My top technologies</h3>
