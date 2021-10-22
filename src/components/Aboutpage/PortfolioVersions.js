@@ -37,13 +37,13 @@ const PortfolioVersions = () => {
                             <img src={pVersions.mainImage.asset.url} alt={pVersions.title} />
                             <div className="portfolioVer-content">
                                 <a href={pVersions.link} target="_blank" rel="noopener noreferrer" alt={pVersions.title} className="project-name">{pVersions.title}</a>
-                                <span className="project-date">Published: <strong>{ new Date(pVersions.date).toDateString()}</strong></span>
+                                <span className="project-date">Published: <strong>{new Date(pVersions.date).getFullYear()}</strong></span>
                                 <p className="project-description">{pVersions.description}</p>
                                 <p className="project-tech">Technology used:</p>
                                 <ul><li key={pVersions.tags}>{pVersions.tags}</li></ul>
                                 <div className="project-navigation-links">
                                     <a href={pVersions.link} rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" className="project-link"><img src={iconLink} alt="link"  />Website link</a>
-                                    <a href={pVersions.repoLink} rel="noopener noreferrer" className="repository-link"><img src={iconLinkGithub} alt="link"  />Repository
+                                    <a href={pVersions.repoLink}  target="_blank" rel="noopener noreferrer" className="repository-link"><img src={iconLinkGithub} alt="link"  />Repository
                                     </a>
                                 </div>
                             </div>
