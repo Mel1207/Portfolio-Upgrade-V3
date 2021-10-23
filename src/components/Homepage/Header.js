@@ -21,7 +21,8 @@ const Header = () => {
                             <h2 className="section-header">Hi There I'm MJ</h2>
                             <h1>FRONT_END DEVELOPER</h1>
                             <h1>UI/UX DESIGNER</h1>
-                            <a href="#!" className="btn">See Works</a>
+                            <Link to="/portfolio" className="btn">See works</Link>
+                            {/* <a href="#!" className="btn">See Works</a> */}
                         </div>
                         <div className="sidenav-menu" onClick={handleToggle}>
                             <div className="line-1"></div>
@@ -33,7 +34,6 @@ const Header = () => {
                         <a href="#section-1">
                             <div className="scroll-trigger"></div>
                             <p>SCROLL DOWN</p>
-                            
                         </a>
                     </div>
                 </div>
