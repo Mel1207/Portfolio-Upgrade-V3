@@ -30,7 +30,7 @@ const Header = () => {
                             <div className="line-menu">MENU</div>
                         </div>
                     </div>
-                    <div className="scroll-btn">
+                    <div className="scroll-btn"> 
                         <a href="#section-1">
                             <div className="scroll-trigger"></div>
                             <p>SCROLL DOWN</p>

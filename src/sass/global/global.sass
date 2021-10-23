@@ -87,8 +87,6 @@
     text-align: center
     cursor: pointer
 
-    // margin: 30px 0
-
     &:hover
         outline-offset: 0
         outline: 2px solid transparent
@@ -222,12 +220,7 @@
     position: absolute
     height: 100%
     width: 40vw
-    // background: url("../img/header-bg.jpg")
-    // background-attachment: fixed
     background-repeat: no-repeat
-    // background-position: center
-   
-    // object-fit: cover
     z-index: -1
     top: 0
     right: 0
@@ -316,6 +309,18 @@
                 text-align: center
                 line-height: 30px
                 font-size: 1.2rem
+
+.latest-blog-section
+    padding: 3rem 0
+
+    .latest-blog-container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 3rem
+
+        img 
+            width: 100%
+            height: auto
 
 
 .section-footer 

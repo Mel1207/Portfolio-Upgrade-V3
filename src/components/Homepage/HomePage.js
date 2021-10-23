@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar'
 import Header from './Header'
+import LatestBlog from './LatestBlog'
 import Section1 from './Section-1'
 import Section2 from './Section-2'
 
@@ -12,6 +13,7 @@ const HomePage = () => {
             <Header />
             <Section1 />
             <Section2 />
+            <LatestBlog />
         </>
     )
 }
