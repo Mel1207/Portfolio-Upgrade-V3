@@ -8,6 +8,7 @@ const LatestBlog = () => {
                 <h2 className="section-header">My blog</h2>
                 <h3 className="section-subheader">Check out my latest blog post</h3>
 
+                
                 <div className="latest-blog-container">
                     <div>
                         <img src={aboutBg} alt="" />
