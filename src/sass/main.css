@@ -789,29 +789,23 @@ button {
   font-weight: 600;
   font-size: 3rem;
 }
-.section-1 .flex {
-  display: flex;
+.section-1 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  grid-column-gap: 5rem;
 }
-.section-1 .flex .right-aside {
-  width: 40vw;
-  padding-left: 20px;
-}
-.section-1 .flex .left-aside {
-  width: 60vw;
-  padding-right: 20px;
-}
-.section-1 .flex .left-aside div {
+.section-1 .grid .left-aside div {
   position: relative;
 }
-.section-1 .flex .left-aside .object-1, .section-1 .flex .left-aside .object-2 {
-  width: auto;
-  height: 330px;
-  filter: drop-shadow(0px 4px 28px rgba(0, 0, 0, 0.35));
+.section-1 .grid .left-aside .object-1, .section-1 .grid .left-aside .object-2 {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
 }
-.section-1 .flex .left-aside .object-2 {
-  margin-left: 95px;
-  margin-top: -165px;
+.section-1 .grid .left-aside .object-2 {
+  padding-left: 95px;
+  padding-top: -165px;
 }
 
 .section-2 {
@@ -995,6 +989,10 @@ button {
   .about-grid {
     margin-top: 0;
     align-items: center;
+  }
+
+  .section-1 .grid {
+    grid-template-columns: 1fr;
   }
 
   .section-2 {
