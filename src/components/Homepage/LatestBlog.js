@@ -32,16 +32,18 @@ const LatestBlog = () => {
 
                 {updatedBlog && updatedBlog.map((mainItem, index) => (
                     <div className="latest-blog-container" key={index}>
+                        <img src={mainItem.mainImage.asset.url} alt={mainItem.mainImage.alt} />
                         <div>
-                            <img src={mainItem.mainImage.asset.url} alt="" />
-                        </div>
-                        <div>
-                            <h3>{mainItem.title}</h3>
-                            ajsd;flkajsdfl;kasd;fklajsdl;fjk
-                            <Link to={"/blog/" + mainItem.slug.current} className="btn-small">Read more</Link>
+                            <h3 className="latest-blog-title">{mainItem.title}</h3>
+                            <span className="latest-blog-date">{`${new Date(mainItem.date).getMonth()}/${new Date(mainItem.date).getDate()}/${new Date(mainItem.date).getFullYear()}`}</span>
+
+                            <p className="latest-blog-text">{mainItem.subHeader}</p>
+                            <Link to={"/blog/" + mainItem.slug.current} className="btn">Read more</Link>
                         </div>
                     </div>
-                 ))} 
+                ))} 
+
+                   
             </div>
         </div>
        

@@ -864,14 +864,40 @@ button {
 .latest-blog-section {
   padding: 3rem 0;
 }
-.latest-blog-section .latest-blog-container {
+
+.latest-blog-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3rem;
+  align-items: center;
 }
-.latest-blog-section .latest-blog-container img {
+.latest-blog-container img {
   width: 100%;
   height: auto;
+}
+.latest-blog-container .latest-blog-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.latest-blog-container .latest-blog-date {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #597BAE;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  width: max-content;
+  background: rgba(109, 151, 215, 0.2);
+}
+.latest-blog-container .latest-blog-text {
+  line-height: 30px;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-indent: 1.5rem;
 }
 
 .section-footer {

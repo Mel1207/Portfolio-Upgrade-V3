@@ -313,14 +313,40 @@
 .latest-blog-section
     padding: 3rem 0
 
-    .latest-blog-container
-        display: grid
-        grid-template-columns: 1fr 1fr
-        grid-column-gap: 3rem
+.latest-blog-container
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 3rem
+    align-items: center
 
-        img 
-            width: 100%
-            height: auto
+    img 
+        width: 100%
+        height: auto
+
+    .latest-blog-title
+        font-size: 1.5rem
+        margin-bottom: 10px
+
+    .latest-blog-date
+        display: block
+        font-size: .9rem
+        font-weight: 500
+        color: $cBlue
+        padding: .3rem .8rem
+        border-radius: 100px
+        width: max-content
+        background: $cBlue50
+
+    .latest-blog-text
+        line-height: 30px
+        font-size: 1.2rem
+        margin: 20px 0
+        display: -webkit-box
+        -webkit-box-orient: vertical
+        -webkit-line-clamp: 5
+        overflow: hidden
+    
+        text-indent: 1.5rem
 
 
 .section-footer 
