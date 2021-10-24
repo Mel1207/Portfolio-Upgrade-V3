@@ -818,8 +818,7 @@ button {
   height: 650px;
   width: 100%;
   background: #fff;
-  display: flex;
-  align-items: center;
+  padding: 3rem 0;
 }
 .section-2 .grid {
   display: grid;
@@ -998,6 +997,13 @@ button {
     align-items: center;
   }
 
+  .section-2 {
+    height: auto;
+  }
+  .section-2 .grid {
+    grid-template-columns: 1fr;
+  }
+
   .skills-section .skills-card-grid {
     grid-column-gap: 1rem;
   }
@@ -1035,6 +1041,10 @@ button {
   }
   .design-container .design-card {
     margin-bottom: 1rem;
+  }
+
+  .latest-blog-container {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 900px) {
