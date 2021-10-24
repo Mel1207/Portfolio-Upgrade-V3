@@ -1,6 +1,5 @@
 import React from 'react'
 import Object1 from '../../img/img-object.png'
-import Object2 from '../../img/MC-app-mobile.png'
 // comment
 
 const Section1 = () => {
