@@ -1074,6 +1074,10 @@ button {
   }
 }
 @media screen and (max-width: 570px) {
+  .container {
+    width: 90%;
+  }
+
   .navbar {
     height: 130px;
   }
