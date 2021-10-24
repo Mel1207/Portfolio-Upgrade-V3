@@ -695,6 +695,15 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+.section-container .header-flex .social-links ul li {
+  margin-bottom: 15px;
+}
+.section-container .header-flex .social-links ul li a {
+  colo: #fff;
+}
+.section-container .header-flex .social-links ul li:last-child {
+  margin-bottom: 0;
+}
 .section-container .scroll-btn {
   margin-top: 20vh;
 }

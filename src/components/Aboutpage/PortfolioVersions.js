@@ -42,7 +42,7 @@ const PortfolioVersions = () => {
                                 <p className="project-tech">Technology used:</p>
                                 <ul><li key={pVersions.tags}>{pVersions.tags}</li></ul>
                                 <div className="project-navigation-links">
-                                    <a href={pVersions.link} rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" className="project-link">
+                                    <a href={pVersions.link} rel="noopener noreferrer" target="_blank" className="project-link">
                                         <img src={iconLink} alt="link"  />Website link
                                     </a>
                                     <a href={pVersions.repoLink}  target="_blank" rel="noopener noreferrer" className="repository-link">
