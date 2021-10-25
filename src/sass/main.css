@@ -1158,6 +1158,13 @@ button {
     margin-top: 0;
     font-size: 35px;
   }
+
+  .section-footer .grid div:nth-child(2) {
+    width: 100%;
+  }
+  .section-footer .grid div:nth-child(2) .form-container {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 425px) {
   .skills-section .skills-card-grid {
