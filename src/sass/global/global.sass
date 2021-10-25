@@ -18,12 +18,49 @@
         justify-content: space-between
         align-items: center
 
-        ul 
+        ul.nav-links
             display: flex
             align-items: center
             
             li 
                 margin-left: 35px
+
+.hamburger-menu
+    display: none
+    cursor: pointer
+    height: 25px
+    width: 40px
+    flex-direction: column
+    justify-content: space-between
+    z-index: 11
+    
+    div 
+        height: 3px
+        width: 100%
+        background: $cBlack
+        transition: 0.3s ease
+
+.menu-click
+    .top-line
+        -webkit-transform: rotate(45deg)
+        -moz-transform: rotate(45deg)
+        -o-transform: rotate(45deg)
+        transform: rotate(45deg) translate(9px, 6px)
+        top: -3px
+        left: 8px
+    
+    .mid-line
+        width: 0
+        opacity: 0
+
+    .bot-line
+        -webkit-transform: rotate(-45deg)
+        -moz-transform: rotate(-45deg)
+        -o-transform: rotate(-45deg)
+        transform: rotate(-45deg) translate(9px, -5px)
+        top: 39px
+        left: 8px
+
 
 .overflow-hide
     overflow: hidden
