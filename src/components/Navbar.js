@@ -41,10 +41,10 @@ const Navbar = (props) => {
                     <img src={navLogo} alt="MjP Logo" />
                 </NavLink>
                 <ul className="nav-links">
-                    <li><NavLink to="/" style={{color: !props.isExact ? '#353535' : '#fff'}}>Home</NavLink></li>
-                    <li><NavLink to="/about" style={{color: !props.isExact ? '#353535' : '#fff'}}>About</NavLink></li>
-                    <li><NavLink to="/portfolio" style={{color: !props.isExact ? '#353535' : '#fff'}}>Portfolio</NavLink></li>
-                    <li><NavLink to="/blog" style={{color: !props.isExact ? '#353535' : '#fff'}}>Blogs</NavLink></li>
+                    <li><NavLink to="/" style={{color: !props.isExact ? '#353535' : '#fff'}} onClick={handleRemoveClass}>Home</NavLink></li>
+                    <li><NavLink to="/about" style={{color: !props.isExact ? '#353535' : '#fff'}} onClick={handleRemoveClass}>About</NavLink></li>
+                    <li><NavLink to="/portfolio" style={{color: !props.isExact ? '#353535' : '#fff'}} onClick={handleRemoveClass}>Portfolio</NavLink></li>
+                    <li><NavLink to="/blog" style={{color: !props.isExact ? '#353535' : '#fff'}} onClick={handleRemoveClass}>Blogs</NavLink></li>
                 </ul>
 
                 <div className={`hamburger-menu ${addClass ? 'menu-click' : null}`} onClick={handleShowMenu}>
