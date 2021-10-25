@@ -794,8 +794,11 @@ button {
   margin-bottom: 0;
 }
 .section-container .scroll-btn {
-  margin-top: 20vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
+  bottom: 5vh;
 }
 .section-container .scroll-btn .scroll-trigger {
   height: 40px;
