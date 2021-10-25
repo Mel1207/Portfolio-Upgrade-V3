@@ -586,6 +586,7 @@ button {
 }
 .navbar .nav-flex ul.nav-links li a {
   transition: 0.3s;
+  font-weight: 500;
 }
 .navbar .nav-flex ul.nav-links li a:hover {
   color: #D76D6D !important;
