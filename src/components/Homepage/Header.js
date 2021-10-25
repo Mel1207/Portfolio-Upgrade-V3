@@ -8,6 +8,12 @@ import iconFacebook from '../../img/nav-logo-facebook.svg'
 
 
 const Header = () => {
+    const handleScrollTo = () => {
+        window.scrollTo({
+            top: 890,
+            behavior: 'smooth'
+        })
+    }
 
     return (
         <>
@@ -37,8 +43,8 @@ const Header = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="scroll-btn"> 
-                        <a href="#section-1">
+                    <div className="scroll-btn" onClick={handleScrollTo}> 
+                        <a>
                             <div className="scroll-trigger"></div>
                             <p>SCROLL DOWN</p>
                         </a>

@@ -12,6 +12,10 @@ const Navbar = (props) => {
     
     const handleRemoveClass = () => {
         document.body.classList.remove('body-hidden')
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        })
     }
 
     useEffect(() => {
