@@ -11,7 +11,12 @@
 .navbar-stickTop
     background: $dWhite !important
     transition: all 0.3s
+    height: 80px !important
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.071))
+
+    .nav-flex
+        .nav-logo
+            height: 40px !important
 
     ul 
         li 
@@ -33,6 +38,10 @@
         display: flex
         justify-content: space-between
         align-items: center
+
+        .nav-logo
+            height: 60px
+            transition: 0.3s ease
 
         ul.nav-links
             display: flex
@@ -415,7 +424,7 @@
 .section-footer 
     position: relative
     height: 100vh
-    min-height: 800px
+    min-height: auto
     width: 100%
     padding: 5vh 0
 

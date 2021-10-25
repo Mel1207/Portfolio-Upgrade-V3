@@ -38,7 +38,7 @@ const Navbar = (props) => {
         <nav className={`navbar ${scrollNavClass}`} style={{background: !props.isExact ? '#fbfbfb' : 'transparent'}}>
             <div className="container nav-flex">
                 <NavLink to="/" exact>
-                    <img src={navLogo} alt="MjP Logo" />
+                    <img src={navLogo} alt="MjP Logo" className="nav-logo"/>
                 </NavLink>
                 <ul className="nav-links">
                     <li><NavLink to="/" style={{color: !props.isExact ? '#353535' : '#fff'}} onClick={handleRemoveClass}>Home</NavLink></li>
