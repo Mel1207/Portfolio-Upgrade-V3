@@ -741,6 +741,7 @@ button {
   position: absolute;
   height: 100%;
   width: 40vw;
+  min-width: 480px;
   background-repeat: no-repeat;
   z-index: -1;
   top: 0;
@@ -956,6 +957,18 @@ button {
 }
 
 @media screen and (max-width: 1080px) {
+  .bg-img {
+    display: none;
+  }
+
+  .navbar .nav-flex ul li a {
+    color: #353535 !important;
+  }
+
+  .section-container .header-flex .social-links {
+    display: none;
+  }
+
   .about-grid {
     margin-top: 0;
     align-items: center;
