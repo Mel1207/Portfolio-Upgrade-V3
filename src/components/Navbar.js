@@ -10,7 +10,10 @@ const Navbar = (props) => {
         document.body.classList.toggle('body-hidden')
     }
     // console.log(props)
-  
+    const handleRemoveClass = () => {
+        document.body.classList.remove('body-hidden')
+    }
+
     return (
         <nav className="navbar">
             <div className="container nav-flex">
@@ -32,15 +35,11 @@ const Navbar = (props) => {
 
                 <div className={`menu ${addClass ? 'menu-show' : null}`}>
                     <div className="container">
-                        <h1>h1</h1>
-                        <h1>h1</h1>
-                        <h1>h1</h1>
-                        <h1>h1</h1>
                         <ul className="">
-                            <li><NavLink to="/" style={{color: '#353535'}}>Home</NavLink></li>
-                            <li><NavLink to="/about" style={{color: '#353535'}}>About</NavLink></li>
-                            <li><NavLink to="/portfolio" style={{color: '#353535'}}>Portfolio</NavLink></li>
-                            <li><NavLink to="/blog" style={{color: '#353535'}}>Blogs</NavLink></li>
+                            <li><NavLink to="/" style={{color: '#353535'}} onClick={handleRemoveClass}>Home</NavLink></li>
+                            <li><NavLink to="/about" style={{color: '#353535'}} onClick={handleRemoveClass}>About</NavLink></li>
+                            <li><NavLink to="/portfolio" style={{color: '#353535'}} onClick={handleRemoveClass}>Portfolio</NavLink></li>
+                            <li><NavLink to="/blog" style={{color: '#353535'}} onClick={handleRemoveClass}>Blogs</NavLink></li>
                         </ul>
                     </div>
                 </div>
