@@ -968,9 +968,8 @@ button {
 .section-footer {
   position: relative;
   height: 100vh;
-  min-height: auto;
+  min-height: 900px;
   width: 100%;
-  padding: 5vh 0;
 }
 .section-footer .overlay {
   display: flex;
