@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import navLogo from '../img/nav-logo-main.svg'
 
 const Navbar = (props) => {
+    const [addClass, setAddClass] = useState(false)
+
+    const handleShowMenu = () => {
+        setAddClass(!addClass)
+    }
+
+    
+
     // console.log(props)
   
     return (
@@ -18,10 +26,10 @@ const Navbar = (props) => {
                     <li><NavLink to="/blog" style={{color: !props.isExact ? '#353535' : '#fff'}}>Blogs</NavLink></li>
                 </ul>
 
-                <div class="hamburger-menu">
-                    <div class="top-line"></div>
-                    <div class="mid-line"></div>
-                    <div class="bot-line"></div>
+                <div className={`hamburger-menu ${addClass ? 'menu-click' : null}`} onClick={handleShowMenu}>
+                    <div className="top-line"></div>
+                    <div className="mid-line"></div>
+                    <div className="bot-line"></div>
                 </div>
             </div>
         </nav>
