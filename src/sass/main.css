@@ -795,6 +795,7 @@ button {
 }
 .section-container .scroll-btn {
   margin-top: 20vh;
+  cursor: pointer;
 }
 .section-container .scroll-btn .scroll-trigger {
   height: 40px;

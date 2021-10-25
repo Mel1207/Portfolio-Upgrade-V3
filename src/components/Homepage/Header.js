@@ -44,10 +44,10 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="scroll-btn" onClick={handleScrollTo}> 
-                        <a>
+                        <div>
                             <div className="scroll-trigger"></div>
                             <p>SCROLL DOWN</p>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div className="bg-img" style={{
