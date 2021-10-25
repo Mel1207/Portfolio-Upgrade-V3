@@ -553,10 +553,24 @@ button {
   margin: auto;
 }
 
+.navbar-stickTop {
+  background: #FBFBFB !important;
+  transition: all 0.3s;
+}
+.navbar-stickTop ul li a {
+  color: #353535 !important;
+}
+
 .navbar {
   height: 100px;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  transition: all 0.3s;
 }
 .navbar .nav-flex {
   display: flex;
@@ -569,6 +583,12 @@ button {
 }
 .navbar .nav-flex ul.nav-links li {
   margin-left: 35px;
+}
+.navbar .nav-flex ul.nav-links li a {
+  transition: 0.3s;
+}
+.navbar .nav-flex ul.nav-links li a:hover {
+  color: #D76D6D !important;
 }
 
 .hamburger-menu {
@@ -634,7 +654,7 @@ button {
 }
 .menu .container ul li span {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   font-size: 1.5rem;
   font-weight: 500;
   transition: all 0.3s;
@@ -750,7 +770,7 @@ button {
 .section-container {
   display: flex;
   align-items: center;
-  height: calc( 100vh - 100px );
+  height: 100vh;
   width: 100%;
 }
 .section-container h1 {

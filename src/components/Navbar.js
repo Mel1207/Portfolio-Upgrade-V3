@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import navLogo from '../img/nav-logo-main.svg'
 
@@ -9,13 +9,29 @@ const Navbar = (props) => {
         setAddClass(!addClass)
         document.body.classList.toggle('body-hidden')
     }
-    // console.log(props)
+    
     const handleRemoveClass = () => {
         document.body.classList.remove('body-hidden')
     }
 
+    useEffect(() => {
+        window.addEventListener('scroll', checkClassNav)
+    }, [])
+
+    const [scrollNavClass, setScrollNavClass] = useState(false)
+
+    const checkClassNav = () => {
+        if(window.scrollY >= 80) {
+            setScrollNavClass('navbar-stickTop')
+        } else {
+            setScrollNavClass(null)
+        }
+    }
+
+    // console.log(props)
+
     return (
-        <nav className="navbar">
+        <nav className={`navbar ${scrollNavClass}`} style={{background: !props.isExact ? '#fbfbfb' : 'transparent'}}>
             <div className="container nav-flex">
                 <NavLink to="/" exact>
                     <img src={navLogo} alt="MjP Logo" />
