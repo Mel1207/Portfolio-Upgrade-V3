@@ -77,9 +77,6 @@
     transform: translateX(100%)
     background: $dWhite
 
-    display: grid
-    grid-template-columns: 1fr 1fr
-
 .menu-show
     animation: menuShow 1s forwards
     transition: all 1s ease
@@ -87,6 +84,9 @@
     @keyframes menuShow
         100%
             transform: translateX(0)
+
+.body-hidden
+    overflow: hidden
 
 
 .btn 

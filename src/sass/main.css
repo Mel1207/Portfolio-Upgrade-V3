@@ -623,8 +623,6 @@ button {
   right: 0;
   transform: translateX(100%);
   background: #FBFBFB;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .menu-show {
@@ -635,6 +633,10 @@ button {
   100% {
     transform: translateX(0);
   }
+}
+
+.body-hidden {
+  overflow: hidden;
 }
 
 .btn {
