@@ -77,6 +77,36 @@
     transform: translateX(100%)
     background: $dWhite
 
+    .container
+        height: 100%
+        display: flex
+        align-items: center
+
+        ul 
+            li  
+                margin-bottom: 1.5rem
+
+                span
+                    display: flex
+                    align-items: end
+                    font-size: 1.5rem
+                    font-weight: 500
+                    transition: all 0.3s
+
+                    p 
+                        margin-left: 15px
+                        font-size: 2.5rem
+                        font-weight: 700
+                        line-height: 1
+                        transition: all 0.3s
+
+                    &:hover
+                        color: $cRed
+
+                        p 
+                            color: $cRed
+                            margin-left: 20px
+
 .menu-show
     animation: menuShow 1s forwards
     transition: all 1s ease

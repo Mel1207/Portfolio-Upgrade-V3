@@ -36,10 +36,10 @@ const Navbar = (props) => {
                 <div className={`menu ${addClass ? 'menu-show' : null}`}>
                     <div className="container">
                         <ul className="">
-                            <li><NavLink to="/" style={{color: '#353535'}} onClick={handleRemoveClass}>Home</NavLink></li>
-                            <li><NavLink to="/about" style={{color: '#353535'}} onClick={handleRemoveClass}>About</NavLink></li>
-                            <li><NavLink to="/portfolio" style={{color: '#353535'}} onClick={handleRemoveClass}>Portfolio</NavLink></li>
-                            <li><NavLink to="/blog" style={{color: '#353535'}} onClick={handleRemoveClass}>Blogs</NavLink></li>
+                            <li><NavLink to="/" style={{color: '#353535'}} onClick={handleRemoveClass}><span>1.<p>Home</p></span></NavLink></li>
+                            <li><NavLink to="/about" style={{color: '#353535'}} onClick={handleRemoveClass}><span>2.<p>About</p></span></NavLink></li>
+                            <li><NavLink to="/portfolio" style={{color: '#353535'}} onClick={handleRemoveClass}><span>3.<p>Portfolio</p></span></NavLink></li>
+                            <li><NavLink to="/blog" style={{color: '#353535'}} onClick={handleRemoveClass}><span>4.<p>Blogs</p></span></NavLink></li>
                         </ul>
                     </div>
                 </div>

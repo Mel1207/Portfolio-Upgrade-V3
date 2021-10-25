@@ -624,6 +624,35 @@ button {
   transform: translateX(100%);
   background: #FBFBFB;
 }
+.menu .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu .container ul li {
+  margin-bottom: 1.5rem;
+}
+.menu .container ul li span {
+  display: flex;
+  align-items: end;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.menu .container ul li span p {
+  margin-left: 15px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: all 0.3s;
+}
+.menu .container ul li span:hover {
+  color: #D76D6D;
+}
+.menu .container ul li span:hover p {
+  color: #D76D6D;
+  margin-left: 20px;
+}
 
 .menu-show {
   animation: menuShow 1s forwards;
