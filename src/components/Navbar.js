@@ -31,6 +31,10 @@ const Navbar = (props) => {
                     <div className="mid-line"></div>
                     <div className="bot-line"></div>
                 </div>
+
+                <div className={`menu ${addClass ? 'menu-show' : null}`}>
+                    
+                </div>
             </div>
         </nav>
     )
