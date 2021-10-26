@@ -63,7 +63,7 @@ const Tabs = () => {
                             <img src={portfolio.mainImage.asset.url} alt={portfolio.title} />
                             <div className="project-content">
                                 <a href={portfolio.link} target="_blank" rel="noopener noreferrer" alt={portfolio.title} className="project-name">{portfolio.title}</a>
-                                <span className="project-date">Published: <strong>{ new Date(portfolio.date).toDateString()}</strong></span>
+                                <span className="project-date">Published: <strong>{`${new Date(portfolio.date).getMonth() + 1}/${new Date(portfolio.date).getDate()}/${new Date(portfolio.date).getFullYear()}`}</strong></span>
                                 <p className="project-description">{portfolio.description}</p>
                                 <p className="project-tech">Technology used:</p>
                                 <ul><li key={portfolio.tags}>{portfolio.tags}</li></ul>
