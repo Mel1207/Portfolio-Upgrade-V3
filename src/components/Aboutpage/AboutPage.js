@@ -11,6 +11,15 @@ import iconReact from '../../img/icon-react.svg'
 import iconJquery from '../../img/icon-jquery.svg'
 import iconHtml from '../../img/icon-html.svg'
 import iconCss from '../../img/icon-css.svg'
+import iconFigma from '../../img/icon-figma.svg'
+import iconSass from '../../img/icon-sass.svg'
+import iconBootstrap from '../../img/icon-bootstrap.svg'
+import iconTailwind from '../../img/icon-tailwind.svg'
+import iconMaterialize from '../../img/icon-materialize.svg'
+import iconGit from '../../img/icon-git.svg'
+import iconGitlab from '../../img/icon-gitlab.svg'
+import iconTrello from '../../img/icon-trello.svg'
+import iconGsap from '../../img/icon-gsap.svg'
 import quoteBg from '../../img/quotes-bg.jpg'
 import skillsBg from '../../img/skills-bg.jpg'
 import PortfolioVersions from './PortfolioVersions'
@@ -84,7 +93,6 @@ const AboutPage = () => {
                                     <li>
                                         <span><img src={iconCss} alt="CSS3" />CSS3</span>
                                     </li>
-                                   
                                 </ul>
                             </div>
                         </div>
@@ -103,19 +111,22 @@ const AboutPage = () => {
                             <div className="skills-card-content">
                                 <ul>
                                     <li>
-                                        <span><img src={iconJavascript} alt="Javascript" />Javascript</span>
+                                        <span><img src={iconFigma} alt="Figma" />Figma</span>
                                     </li>
                                     <li>
-                                        <span><img src={iconReact} alt="React.js" />React.js</span>
+                                        <span><img src={iconSass} alt="Sass" />Sass</span>
                                     </li>
                                     <li>
-                                        <span><img src={iconJquery} alt="Jquery" />Jquery</span>
+                                        <span><img src={iconBootstrap} alt="Bootstrap" />Bootstrap</span>
                                     </li>
                                     <li>
-                                        <span><img src={iconHtml} alt="HTML5" />HTML5</span>
+                                        <span><img src={iconTailwind} alt="Tailwind" />Tailwind</span>
                                     </li>
                                     <li>
-                                        <span><img src={iconCss} alt="CSS3" />CSS3</span>
+                                        <span><img src={iconMaterialize} alt="Materialize" />Materialize</span>
+                                    </li>
+                                    <li>
+                                        <span><img src={iconGsap} alt="Gsap" />GSAP </span>
                                     </li>
                                    
                                 </ul>
@@ -136,21 +147,14 @@ const AboutPage = () => {
                             <div className="skills-card-content">
                                 <ul>
                                     <li>
-                                        <span><img src={iconJavascript} alt="Javascript" />Javascript</span>
+                                        <span><img src={iconGit} alt="Git/Github" />Git/Github</span>
                                     </li>
                                     <li>
-                                        <span><img src={iconReact} alt="React.js" />React.js</span>
+                                        <span><img src={iconGitlab} alt="Gitlab" />Gitlab</span>
                                     </li>
                                     <li>
-                                        <span><img src={iconJquery} alt="Jquery" />Jquery</span>
+                                        <span><img src={iconTrello} alt="Trello" />Trello</span>
                                     </li>
-                                    <li>
-                                        <span><img src={iconHtml} alt="HTML5" />HTML5</span>
-                                    </li>
-                                    <li>
-                                        <span><img src={iconCss} alt="CSS3" />CSS3</span>
-                                    </li>
-                                   
                                 </ul>
                             </div>
                         </div>
