@@ -25,13 +25,6 @@ const Footer = () => {
         document.querySelector('#inputMessage').value = ''
     }
 
-    // const handleNullValue = (e) => {
-    //     console.log('cleared text')
-    //     // document.querySelector('#inputName').value = ''
-    //     // document.querySelector('#inputEmail').value = ''
-    //     // document.querySelector('#inputMessage').value = ''
-    // }
-
     return (
         <div className="section-footer" style={{
             background: `url("${footerBg}")`,
