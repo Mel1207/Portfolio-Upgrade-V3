@@ -965,6 +965,18 @@ button {
   text-indent: 1.5rem;
 }
 
+.showMessage {
+  position: absolute !important;
+  right: 0;
+  bottom: 5vh;
+}
+.showMessage span {
+  display: block;
+  padding: 1rem 2.5rem;
+  color: #fff;
+  background: #51AE66;
+}
+
 .section-footer {
   position: relative;
   height: 100vh;
@@ -1028,6 +1040,9 @@ button {
 .section-footer .form-container .btn {
   display: block;
   width: 100%;
+}
+.section-footer .form-container input[type=submit] {
+  background: red;
 }
 .section-footer .footer-links {
   display: flex;
