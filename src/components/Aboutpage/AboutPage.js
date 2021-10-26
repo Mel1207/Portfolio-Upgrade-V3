@@ -3,6 +3,9 @@ import Navbar from '../Navbar'
 import aboutBg from '../../img/aboutBg.png'
 import aboutAvatar from '../../img/avatar.jpg'
 import galleryImg from '../../img/gallery-img.jpg'
+import skillFrontEnd from '../../img/front-end.jpg'
+import skillDesign from '../../img/Design.jpg'
+import skillOthers from '../../img/Others.jpg'
 import iconJavascript from '../../img/icon-js.svg'
 import iconReact from '../../img/icon-react.svg'
 import iconJquery from '../../img/icon-jquery.svg'
@@ -55,7 +58,7 @@ const AboutPage = () => {
                         <div className="skills-card">
                             <div className="skills-img-container" style={{
                                 padding: '1.5rem',
-                                background: `url("${galleryImg}")`,
+                                background: `url("${skillFrontEnd}")`,
                                 height: '150px',
                                 width: '100%',
                                 backgroundSize: 'cover',
@@ -88,14 +91,14 @@ const AboutPage = () => {
                         <div className="skills-card">
                             <div className="skills-img-container" style={{
                                 padding: '1.5rem',
-                                background: `url("${galleryImg}")`,
+                                background: `url("${skillDesign}")`,
                                 height: '150px',
                                 width: '100%',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                                 position: 'relative'
                             }}>
-                                <h4>FRONT-END</h4>
+                                <h4>Design</h4>
                             </div>
                             <div className="skills-card-content">
                                 <ul>
@@ -121,14 +124,14 @@ const AboutPage = () => {
                         <div className="skills-card">
                             <div className="skills-img-container" style={{
                                 padding: '1.5rem',
-                                background: `url("${galleryImg}")`,
+                                background: `url("${skillOthers}")`,
                                 height: '150px',
                                 width: '100%',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                                 position: 'relative'
                             }}>
-                                <h4>FRONT-END</h4>
+                                <h4>Others</h4>
                             </div>
                             <div className="skills-card-content">
                                 <ul>
