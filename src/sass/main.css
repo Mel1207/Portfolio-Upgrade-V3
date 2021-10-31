@@ -1206,6 +1206,10 @@ button {
     line-height: 60px !important;
   }
 
+  .about-bg {
+    background-position: center center !important;
+  }
+
   .section-header {
     font-size: 1rem;
   }
