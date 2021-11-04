@@ -515,6 +515,10 @@ button {
   display: block;
   margin: 2rem auto;
 }
+.blog-container .blog-body figure img {
+  width: auto;
+  max-width: 100%;
+}
 .blog-container .blog-body p {
   ine-height: 30px;
   font-size: 1.2rem;
