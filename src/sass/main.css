@@ -378,7 +378,7 @@ button {
   background: #fff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
-.blogs-section .blogs-card img {
+.blogs-section .blogs-card .blog-main-img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -513,10 +513,7 @@ button {
 }
 .blog-container .blog-body figure {
   display: block;
-  margin: 2rem 0;
-}
-.blog-container .blog-body figure img {
-  width: 100%;
+  margin: 2rem auto;
 }
 .blog-container .blog-body p {
   ine-height: 30px;

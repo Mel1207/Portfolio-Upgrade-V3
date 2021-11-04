@@ -46,7 +46,7 @@ const BlogPage = () => {
                 <div className="blogs-section">
                     {postData && postData.map((post, index) => (
                         <div key={index} className="blogs-card">
-                            <img src={post.mainImage.asset.url} alt={post.mainImage.alt} />
+                            <img src={post.mainImage.asset.url} alt={post.mainImage.alt} className="blog-main-img"/>
                             <div className="blogs-content">
                                 <div className="blogs-box-top">
                                     <Link to={"/blog/" + post.slug.current} key={post.slug.current}><h4 className="blogs-title">{post.title}</h4></Link>
