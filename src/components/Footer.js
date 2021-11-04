@@ -41,7 +41,7 @@ const Footer = () => {
 
                             <ul className="footer-links">
                                 <li><a href="https://www.linkedin.com/in/mel-john-pualon-75345419a/" rel="noopener noreferrer" target="_blank"><img src={navLinkIn} alt="LinkedIn" /></a></li>
-                                <li><a href="https://www.behance.net/" rel="noopener noreferrer" target="_blank"><img src={navBehance} alt="Behance" /></a></li>
+                                <li><a href="https://www.behance.net/meljohnpualon" rel="noopener noreferrer" target="_blank"><img src={navBehance} alt="Behance" /></a></li>
                                 <li><a href="https://github.com/Mel1207" rel="noopener noreferrer" target="_blank"><img src={navGithub} alt="Github" /></a></li>
                                 <li><a href="https://www.facebook.com/Meljohn.pualon/" rel="noopener noreferrer" target="_blank"><img src={navFacebook} alt="Facebook" /></a></li>
                             </ul>

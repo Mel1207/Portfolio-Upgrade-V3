@@ -32,7 +32,7 @@ const Header = () => {
                                     <a href="https://www.linkedin.com/in/mel-john-pualon-75345419a/" rel="noopener noreferrer" target="_blank"><img src={iconLinkedIn} alt="linkedIn" /></a>
                                 </li>
                                 <li>
-                                    <a href="https://www.behance.net/" rel="noopener noreferrer" target="_blank"><img src={iconBehance} alt="behance" /></a>
+                                    <a href="https://www.behance.net/meljohnpualon" rel="noopener noreferrer" target="_blank"><img src={iconBehance} alt="behance" /></a>
                                 </li>
                                 <li>
                                     <a href="https://github.com/Mel1207" rel="noopener noreferrer" target="_blank"><img src={iconGithub} alt="github" /></a>
