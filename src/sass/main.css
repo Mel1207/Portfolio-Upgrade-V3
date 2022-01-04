@@ -862,6 +862,38 @@ button {
   transform: translate(-50%, 19px);
 }
 
+.motion-1 {
+  transform: translateX(-50%);
+  animation: right infinite 35s alternate;
+}
+
+.motion-2 {
+  transform: translateX(-10%);
+  animation: left infinite 25s alternate;
+}
+
+.motion-3 {
+  transform: translateX(-25%);
+  animation: right infinite 30s alternate;
+  animation-delay: 0.5s;
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(-2%);
+  }
+}
 .bg-img {
   position: absolute;
   height: 100%;

@@ -251,10 +251,6 @@
 
         span.secondary
             color: transparent 
-            // -webkit-text-stroke: 2px solid rgba($cBlack, 0.03)
-            // -webkit-text-stroke: 2px solid 
-            // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
-            // text-shadow: 1px 1px #000
             -webkit-text-stroke-width: 1px
             -webkit-text-stroke-color: #F0F0F0
 
@@ -318,6 +314,34 @@
             &::after
                 transform: translate(-50%, 19px)
 
+.motion-1
+    transform: translateX(-50%)
+    animation: right infinite 35s alternate
+
+.motion-2
+    transform: translateX(-10%)
+    animation: left infinite 25s alternate
+
+.motion-3
+    transform: translateX(-25%)
+    animation: right infinite 30s alternate
+    animation-delay: 0.5s
+
+@keyframes right
+    0%
+        transform: translateX(2%)
+    100%
+        transform: translateX(-10%)
+
+
+@keyframes left
+    0%
+        transform: translateX(-15%)
+    100%
+        transform: translateX(-2%)
+
+
+
 .bg-img
     position: absolute
     height: 100%
@@ -328,7 +352,6 @@
     top: 0
     right: 0
     bottom: 0
-
 
 .section-1
     height: 100vh
