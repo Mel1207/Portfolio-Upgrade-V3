@@ -55,6 +55,11 @@ const Header = () => {
                     backgroundSize: "cover",
                     backgroundAttachment: "fixed",}}>
                 </div>
+                <div className="bg-content">
+                    <span className='mainSpan secondary motion-1'>FRONT_END DEVELOPER FRONT_END DEVELOPER</span>
+                    <span className='mainSpan primary motion-2'>UI/UX DESIGNER UI/UX DESIGNER</span>
+                    <span className='mainSpan secondary motion-3'>FRONT_END DEVELOPER FRONT_END DEVELOPER</span>
+                </div>
             </div>
         </>
     )
