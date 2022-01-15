@@ -938,10 +938,10 @@ button {
 }
 
 .section-2 {
-  height: 650px;
+  height: auto;
   width: 100%;
   background: #fff;
-  padding: 3rem 0;
+  padding: 10vh 0;
 }
 .section-2 .grid {
   display: grid;
