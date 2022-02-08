@@ -1021,6 +1021,9 @@ button {
   overflow: hidden;
   text-indent: 1.5rem;
 }
+.latest-blog-container .btn {
+  margin: 30px 0 0 0;
+}
 
 .showMessage {
   position: absolute !important;
