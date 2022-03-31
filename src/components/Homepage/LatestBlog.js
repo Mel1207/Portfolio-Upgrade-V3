@@ -42,8 +42,6 @@ const LatestBlog = () => {
                         </div>
                     </div>
                 ))} 
-
-                   
             </div>
         </div>
        
