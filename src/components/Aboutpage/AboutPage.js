@@ -7,6 +7,7 @@ import skillFrontEnd from '../../img/front-end.jpg'
 import skillDesign from '../../img/Design.jpg'
 import skillOthers from '../../img/Others.jpg'
 import iconJavascript from '../../img/icon-js.svg'
+import iconVue from '../../img/icon-vue.svg'
 import iconReact from '../../img/icon-react.svg'
 import iconJquery from '../../img/icon-jquery.svg'
 import iconHtml from '../../img/icon-html.svg'
@@ -80,6 +81,9 @@ const AboutPage = () => {
                                 <ul>
                                     <li>
                                         <span><img src={iconJavascript} alt="Javascript" />Javascript</span>
+                                    </li>
+                                    <li>
+                                        <span><img src={iconVue} alt="Vue.js" />Vue.js</span>
                                     </li>
                                     <li>
                                         <span><img src={iconReact} alt="React.js" />React.js</span>
