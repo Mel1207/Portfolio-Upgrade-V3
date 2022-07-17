@@ -1,5 +1,6 @@
 import React from 'react'
-import Object1 from '../../img/img-object.png'
+// import Object1 from '../../img/img-object.png'
+import Object2 from '../../img/img-object2.png'
 // comment
 
 const Section1 = () => {
@@ -8,7 +9,8 @@ const Section1 = () => {
             <div className="container grid">
                 <div className="left-aside">
                     <div>
-                        <img src={Object1} alt="Design 1" className="object-1"/>
+                        {/* <img src={Object1} alt="Design 1" className="object-1"/> */}
+                        <img src={Object2} alt="Design 1" className="object-1"/>
                         {/* <img src={Object2} alt="Design 2" className="object-2"/>   */}
                     </div>
                 </div>
