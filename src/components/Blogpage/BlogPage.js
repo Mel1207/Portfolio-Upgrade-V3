@@ -21,7 +21,9 @@ const BlogPage = () => {
             },
             subHeader,
             date
-        }`).then(data => setPostData(data)).catch(console.error)
+        }`)
+        .then(data => setPostData(data))
+        .catch(console.error)
     })
 
     return (
