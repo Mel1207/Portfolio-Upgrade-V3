@@ -68,7 +68,7 @@ const Tabs = () => {
                                 <p className="project-tech">Technology used:</p>
                                 <ul><li key={portfolio.tags}>{portfolio.tags}</li></ul>
                                 <div className="project-navigation-links">
-                                    <a href={portfolio.link} rel="noopener noreferrer" className="project-link"><img src={iconLink} alt="link"  />Website link</a>
+                                    <a href={portfolio.link} rel="noopener noreferrer" className="project-link" target="_blank"><img src={iconLink} alt="link"  />Website link</a>
                                     <a href={portfolio.repoLink} rel="noopener noreferrer" className="repository-link"><img src={iconLinkGithub} alt="link"  />Repository</a>
                                 </div>
                             </div>
