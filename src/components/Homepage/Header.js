@@ -24,6 +24,7 @@ const Header = () => {
                             <h2 className="section-header">Hi There I'm MJ</h2>
                             <h1>FRONT_END DEVELOPER</h1>
                             <h1>UI/UX DESIGNER</h1>
+                            <span>dev test</span>
                             <Link to="/portfolio" className="btn">See works</Link>
                         </div>
                         <div className="social-links">
