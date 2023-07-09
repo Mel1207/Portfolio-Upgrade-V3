@@ -5,6 +5,7 @@ import iconLinkedIn from '../../img/nav-logo-linkedIn.svg'
 import iconBehance from '../../img/nav-logo-behance.svg'
 import iconGithub from '../../img/nav-logo-github.svg'
 import iconFacebook from '../../img/nav-logo-facebook.svg'
+import iconYoutube from '../../img/nav-logo-youtube.svg'
 
 
 const Header = () => {
@@ -36,6 +37,9 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <a href="https://github.com/Mel1207" rel="noopener noreferrer" target="_blank"><img src={iconGithub} alt="github" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@TheFrontendInstinct" rel="noopener noreferrer" target="_blank"><img src={iconYoutube} alt={iconYoutube} /></a>
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/Meljohn.pualon/" rel="noopener noreferrer" target="_blank"><img src={iconFacebook} alt="facebook" /></a>
