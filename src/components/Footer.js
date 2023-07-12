@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import footerBg from '../img/footer-bg.png'
 import navBehance from '../img/nav-logo-behance.svg'
 import navLinkIn from '../img/nav-logo-linkedIn.svg'
@@ -9,8 +9,30 @@ import emailjs from 'emailjs-com'
 const Footer = () => {
     const date = new Date();
     const currentYear = date.getFullYear();
+    const [showToast, setShowToast] = useState(false)
+    const [showError, setShowError] = useState(false)
 
-    console.log(currentYear)
+
+    const showMessage = () => {
+        const inputName = document.querySelector('#inputName')
+        const inputEmail = document.querySelector('#inputEmail')
+        const inputMessage = document.querySelector('#inputMessage')
+
+        if(inputName.value === '' && inputEmail.value === '' && inputMessage.value === '') {
+            setShowError(true)
+
+            setTimeout(() => {
+                setShowError(false)
+            }, 2000)
+            return
+        }
+
+        setShowToast(true)
+
+        setTimeout(() => {
+            setShowToast(false)
+        }, 2000)
+    }
 
     const handleSendEmail = (e) => {
         e.preventDefault();
@@ -21,8 +43,7 @@ const Footer = () => {
             e.target, 
             'user_8eChwnD42VoCAsL3qRkT5'
         ).then(res => {
-            console.log(res.status)
-
+            // console.log(res.status)
         }).catch(console.error)
 
         document.querySelector('#inputName').value = ''
@@ -56,16 +77,24 @@ const Footer = () => {
                                 <input type="text" name="name" placeholder="Your name" id="inputName"/>
                                 <input type="text" name="sender-email" placeholder="Your email" id="inputEmail"/>
                                 <textarea cols="30" rows="10" placeholder="Your message" name="message" id="inputMessage"></textarea>
-                                <button className="btn" type="submit">Send</button>
+                                <button className="btn" type="submit" onClick={showMessage}>Send</button>
                             </form>
                         </div>
                     </div>
                     <span className="footer-base">Copyright © {currentYear }<span>|</span> Mel John Pualon</span>
                 </div>
             </div>
-            {/* <div className="showMessage">
-                <span>Your Email has been sent thank you!</span>
-            </div> */}
+            {showToast && (
+                <div className="showMessage">
+                    <span>Your Email has been sent thank you!</span>
+                </div>
+            )}
+
+            {showError && (
+                <div className="showError">
+                    <span>Please fill all fields, Thank you!</span>
+                </div>
+            )}
         </div>
     )
 }

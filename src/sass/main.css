@@ -1041,6 +1041,18 @@ button {
   background: #51AE66;
 }
 
+.showError {
+  position: absolute !important;
+  right: 0;
+  bottom: 5vh;
+}
+.showError span {
+  display: block;
+  padding: 1rem 2.5rem;
+  color: #fff;
+  background: #ff4e4e;
+}
+
 .section-footer {
   position: relative;
   height: 100vh;
