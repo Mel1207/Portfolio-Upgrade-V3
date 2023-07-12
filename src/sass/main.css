@@ -44,6 +44,10 @@ button {
   border: none;
 }
 
+.about-bg {
+  background-size: cover !important;
+}
+
 .about-grid {
   position: relative;
   display: grid;
@@ -1029,12 +1033,26 @@ button {
   position: absolute !important;
   right: 0;
   bottom: 5vh;
+  z-index: 99999;
 }
 .showMessage span {
   display: block;
   padding: 1rem 2.5rem;
   color: #fff;
   background: #51AE66;
+}
+
+.showError {
+  position: absolute !important;
+  right: 0;
+  bottom: 5vh;
+  z-index: 99999;
+}
+.showError span {
+  display: block;
+  padding: 1rem 2.5rem;
+  color: #fff;
+  background: #ff4e4e;
 }
 
 .section-footer {
