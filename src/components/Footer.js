@@ -7,6 +7,11 @@ import navFacebook from '../img/nav-logo-facebook.svg'
 import emailjs from 'emailjs-com'
 
 const Footer = () => {
+    const date = new Date();
+    const currentYear = date.getFullYear();
+
+    console.log(currentYear)
+
     const handleSendEmail = (e) => {
         e.preventDefault();
 
@@ -55,7 +60,7 @@ const Footer = () => {
                             </form>
                         </div>
                     </div>
-                    <span className="footer-base">Copyright © 2021 <span>|</span> Mel John Pualon</span>
+                    <span className="footer-base">Copyright © {currentYear }<span>|</span> Mel John Pualon</span>
                 </div>
             </div>
             {/* <div className="showMessage">
