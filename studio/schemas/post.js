@@ -58,6 +58,16 @@ export default {
     },
   ],
 
+  orderings: [
+    {
+      title: 'date new',
+      name: 'dateDesc',
+      by: [
+        {field: 'date', direction: 'desc'}
+      ]
+    }
+  ],
+
   preview: {
     select: {
       title: 'title',

@@ -131,7 +131,6 @@ button {
   transition: all 0.5s ease;
 }
 .skills-section .skills-card-grid .skills-card {
-  height: 400px;
   width: 100%;
   background: #fbfbfb;
   box-shadow: 8px 7px 20px rgba(0, 0, 0, 0.1);
