@@ -21,6 +21,10 @@ import iconGit from '../../img/icon-git.svg'
 import iconGitlab from '../../img/icon-gitlab.svg'
 import iconTrello from '../../img/icon-trello.svg'
 import iconGsap from '../../img/icon-gsap.svg'
+import iconDrupal from '../../img/icon-drupal.svg'
+import iconBubble from '../../img/icon-bubble.svg'
+import iconJira from '../../img/icon-jira.svg'
+import iconAzure from '../../img/icon-azure.svg'
 import quoteBg from '../../img/quotes-bg.jpg'
 import skillsBg from '../../img/skills-bg.jpg'
 import PortfolioVersions from './PortfolioVersions'
@@ -132,7 +136,6 @@ const AboutPage = () => {
                                     <li>
                                         <span><img src={iconGsap} alt="Gsap" />GSAP </span>
                                     </li>
-                                   
                                 </ul>
                             </div>
                         </div>
@@ -151,10 +154,22 @@ const AboutPage = () => {
                             <div className="skills-card-content">
                                 <ul>
                                     <li>
+                                        <span><img src={iconDrupal} alt="Drupal" />Drupal</span>
+                                    </li>
+                                    <li>
+                                        <span><img src={iconBubble} alt="Bubble" />Bubble.io</span>
+                                    </li>
+                                    <li>
                                         <span><img src={iconGit} alt="Git/Github" />Git/Github</span>
                                     </li>
                                     <li>
+                                        <span><img src={iconAzure} alt="Azure" />Azure</span>
+                                    </li>
+                                    <li>
                                         <span><img src={iconGitlab} alt="Gitlab" />Gitlab</span>
+                                    </li>
+                                    <li>
+                                        <span><img src={iconJira} alt="JIRA" />JIRA</span>
                                     </li>
                                     <li>
                                         <span><img src={iconTrello} alt="Trello" />Trello</span>
